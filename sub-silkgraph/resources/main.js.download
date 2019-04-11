@@ -1,0 +1,266 @@
+window.vidanama = {
+	getUrlVars: function() {
+		if (window.location.search == '') {
+			return {};
+		}
+		var vars = {},
+		    hash;
+		var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		for (var i = 0; i < hashes.length; i++) {
+			hash = hashes[i].split('=');
+			vars[hash[0]] = decodeURIComponent(hash[1]);
+		}
+		return vars;
+	},
+	empty: function(value) {
+		var emptyValues = [undefined, null, false, 0, '', '0'];
+		for (i = 0, len = emptyValues.length; i < len; i++) {
+			if (value === emptyValues[i]) {
+				return true;
+			}
+		}
+		return false;
+	}
+};
+
+function showNotification(options) {
+	var options = $.extend({
+		status : 'error',
+		message : '',
+		timeout : 3000,
+		parent : '',
+		modal : false,
+		position : 'topCenter'
+	}, options);
+
+	var notyOptions = {
+		killer : true,
+		text : options.message,
+		type : options.status,
+		layout : options.position,
+		timeout : options.timeout,
+		theme : 'defaultTheme',
+		closeWith : ['click', 'button'],
+		modal : options.modal,
+		animation : {
+			open : {
+				height : 'toggle'
+			}, // or Animate.css class names like: 'animated bounceInLeft'
+			close : {
+				height : 'toggle'
+			}, // or Animate.css class names like: 'animated bounceOutLeft'
+			easing : 'swing',
+			speed : 0 // opening & closing animation speed
+		},
+	};
+
+	if (options.parent) {
+		$(options.parent).noty(notyOptions);
+		return false;
+	}
+
+	noty(notyOptions);
+}
+
+function imgError(image, alternative) {
+	image.onerror = "";
+	image.src = alternative || '/img/user.png';
+	return true;
+};
+
+function friendship(btn, callback) {
+	callback.success = callback.success || function() {};
+	callback.error = callback.error || function() {};
+	var url,
+	    action;
+	switch (true) {
+		case (btn.hasClass('pending') || btn.hasClass('followed')) :
+			action = 'cancel';
+			url = '/api/followers/cancel.json';
+			break;
+		case btn.hasClass('notFollowed') :
+			action = 'follow';
+			url = '/api/followers.json';
+			break;
+		default :
+			return false;
+	}
+	$.ajax({
+		url : localeURL(url),
+		type : 'POST',
+		data : {
+			channel_id : btn.attr('channel-id')
+		},
+		success : function(response) {
+			callback.success(response, action);
+		},
+		error : function(error) {
+			callback.error(error);
+		}
+	});
+}
+
+var msi;
+$(function() {
+	$(document).ajaxComplete(function(event, xhr, settings){
+		var redirect = xhr.getResponseHeader("X-APP-REDIRECT");
+		if (redirect != null) {
+			document.location = redirect;
+		}
+	});
+
+	$(document).on('click', '.messi-modal', function() {
+		msi.unload();
+	});
+
+	$("#category_btn").on("click", function(e) {
+		if (!$(this).hasClass("opencat")) {
+			$(this).next(".category_ul").slideDown(350);
+			$(this).addClass("opencat");
+		} else if ($(this).hasClass("opencat")) {
+			$(this).removeClass("opencat");
+			$(this).next(".category_ul").slideUp(350);
+		}
+	});
+
+	function resizeMenu() {
+		if ($(this).width() > 600) {
+			$('.search_bg').show();
+		}
+	}
+
+	$(window).resize(resizeMenu);
+
+	$('.search_button').click(function() {
+		$('.search_bg').toggle();
+		$('.search_bg input.txtbox').focus();
+		$('.full_bg_search').toggle();
+	});
+
+	$('.full_bg_search').click(function() {
+		$('.search_bg').toggle();
+		$('.full_bg_search').toggle();
+	});
+
+	$('#sidebar_btn').click(function() {
+		$(this).toggleClass('open');
+		$('body').toggleClass("active_sidebar");
+
+	});
+
+	$('#full_bg').click(function(e) {
+		$('#sidebar_btn').click();
+	});
+	$('.search i.close').click(function(e) {
+		$('.full_bg_search').click();
+	});
+
+	$('.toggle_app_btn').click(function(e) {
+		$(this).next('.toggle_app').slideToggle(500);
+	});
+
+
+	$('.android.app').on('click', function(e) {
+		var position = $(this).attr('position');
+		var offset = $(this).offset();
+
+		$('.download_app_wrraper').removeClass('in_footer').removeClass('in_mobile').removeClass('in_header').addClass('in_' + position);
+
+		var left = offset.left;
+		var top = offset.top;
+
+		switch (position) {
+			case 'header':
+				top = 62;
+				left -= ($('.download_app_wrraper').width() / 2) - 10;
+			break;
+			case 'footer':
+				top -= 70;
+				left = $('.fbox_left').offset().left;
+			break;
+			case 'mobile':
+				top += 45;
+				left = $('.fbox_left').offset().left + 15;
+			break;
+		}
+
+		$('.download_app_wrraper').css({
+			'left' : left,
+			'top' : top
+		}).show();
+
+		e.preventDefault();
+		return false;
+	});
+
+    $(document).on('click', ".favorite_content", function () {
+        var id, url, content_id, favorite_btn, data, type;
+        favorite_btn = $(this);
+        if (favorite_btn.children(".icon-star").hasClass("icon-star-active")) {
+            type = "DELETE";
+            url = '/api/favorite/' + favorite_btn.data("id") + '.json';
+            data = {};
+        } else {
+            type = "POST";
+            url = '/api/favorite/create.json';
+            data = {
+                content_id: favorite_btn.data("id")
+            };
+        }
+        $.ajax({
+            url: localeURL(url),
+            type: type,
+            data: data,
+            success: function () {
+                if (type == "DELETE") {
+                    favorite_btn.children(".icon-star").removeClass("icon-star-active");
+                    showNotification({
+                        status: 'success',
+                        message: t('The video was successfully removed from list of favorites')
+                    });
+                } else {
+                    favorite_btn.children(".icon-star").addClass("icon-star-active");
+                    showNotification({
+                        status: 'success',
+                        message: t('The video was successfully added to favorite list')
+                    });
+                }
+            },
+            error: function (error) {
+                if (error.status == 401) {
+                    showNotification({
+                        type: 'error',
+                        message: t('To adding this video to favorite list, You should login first'),
+                    });
+                    var currentURL = String(window.location);
+                    var integer = currentURL.match(/\d+/);
+                    videoID = integer[0];
+                    setTimeout(function () {
+                        if (videoID) {
+                            document.location = '/users/signin?video='+videoID;
+                        }
+                    },1500);
+                } else {
+                    showNotification({
+                        type: 'error',
+                        message: t('Operation failed '),
+                    });
+                }
+            }
+        });
+    });
+});
+
+$(document).on('keyup', function(e){
+	if (e.keyCode == 27) {
+		$(document).trigger('click');
+	}
+});
+
+$(document).on('click', function(e) {
+	if ($(e.target).parents('.toggle_app_box').size() < 1 &&
+		$(e.target).parents('.toggle_app').size() < 1 &&
+		$(e.target).hasClass('toggle_app') === false ) {
+		$('.toggle_app').hide();
+	}
+});

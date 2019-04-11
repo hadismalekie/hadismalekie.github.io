@@ -74,11 +74,11 @@
   .bg-about{min-height: 520px;}
   .wrap-about{
   	min-height: 520px;
-  	padding-bottom: 10%;
-  	padding-left: 30px;
-    padding-right: 30px;
+  	padding-bottom: 5%;
+  	padding-left: 10px;
+    padding-right: 10px;
   }
-  .wrap-about	.head-quote{padding-top: 10%;}
+  .wrap-about	.head-quote{padding-top: 5%;}
 
   .content-right{ margin-top: 20px; }
 

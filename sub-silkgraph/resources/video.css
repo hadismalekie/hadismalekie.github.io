@@ -1,0 +1,45 @@
+.noBG {
+	background: #181818 !important;
+}
+.base.videobox object {
+	max-width: 100%;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+}
+.vjs-no-js {
+	color: #FCD24C;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	font: 25px/40px font2;
+}
+.videotag.videobox{
+	width: 100%;
+	max-width: 100%;
+	direction: ltr;
+}
+.video-js *, .video-js :before, .video-js :after {
+	box-sizing: border-box !important;
+}
+/*
+body .videobox{
+	height:0;
+	padding-top: 56%
+}
+*/
+body .videobox .closeAds {
+    position: absolute;
+    bottom: 31px;
+    color: #fff;
+    font-size: 18px;
+    margin-right:20px;
+    padding: 2px 20px 2px 20px;
+    cursor: pointer;
+    background-color:black;
+    opacity: 0.6;
+}

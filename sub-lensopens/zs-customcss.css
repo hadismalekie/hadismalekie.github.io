@@ -1,0 +1,1420 @@
+/*--------------------------------------------------- PRESET CSS -------------------------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+body {
+ background-image:$BGImage1[url(images/topLine.png)];
+ background-position:$BGPosition1[left top];
+ background-repeat:$BGRepeat1[repeat-x];
+ background-color:$BGColor1[#ffffff];
+ background-attachment:$BGAttachment1[scroll];
+ background-size:$BGSize1[auto];
+ font-family:$BodyFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$BodyFontSize[12px];
+ color:$BodyTextColor[#5c5c5c];
+ font-family:"B Yekan";
+}
+h1 {
+font-family:$BodyH1FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyH1FontSize[24px];
+color:$BodyH1TextColor[#333432];
+}
+h2 {
+font-family:$BodyH2FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyH2FontSize[22px];
+color:$BodyH2TextColor[#333432];
+}
+h3 {
+font-family:$BodyH3FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyH3FontSize[20px];
+color:$BodyH3TextColor[#333432];
+}
+h4 {
+font-family:$BodyH4FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyH4FontSize[18px];
+color:$BodyH4TextColor[#333432];
+}
+h5 {
+font-family:$BodyH5FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyH5FontSize[16px];
+color:$BodyH5TextColor[#333432];
+}
+h6 {
+font-family:$BodyH6FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyH6FontSize[14px];
+color:$BodyH6TextColor[#333432];
+}
+a {
+color:$BodyAColor[#79b400];
+text-decoration:$BodyATextDecoration[none];
+}
+a:hover {
+text-decoration:$BodyAHoverTextDecoration[none];
+color:$BodyAHoverColor[#79b400];
+}
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #1A1A1A;
+}
+a img {
+    border: 0 solid;
+}
+:focus {
+    outline: none;
+}
+p {
+    line-height: 1.7;
+}
+ul, ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style-image: url(images/list-style-image.png);
+}
+li {
+    margin: 0;
+    padding: 0 0 15px;
+}
+ol {
+    list-style-image: none;
+    padding-left: 23px;
+}
+hr {
+    border-top: 1px solid #ced0cc
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+ font-family:$BodyTHFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$BodyTHFontSize[12px];
+ background:$BodyTHBGColor[#f0f0f0];
+ border-width:$BodyTHBorderWidth[1px];
+ border-style:$BodyTHBorderStyle[solid];
+ border-color:$BodyTHBorderColor[#dbdbdb];
+ color:$BodyTHTextColor[#5c5c5c];
+ padding:$BodyTHCellSpaceing[6px];
+}
+td {
+ font-family:$BodyTDFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$BodyTDFontSize[12px];
+ background:$BodyTDBGColor[#f8f8f8];
+ border-width:$BodyTDBorderWidth[1px];
+ border-style:$BodyTDBorderStyle[solid];
+ border-color:$BodyTDBorderColor[#dbdbdb];
+ color:$BodyTDTextColor[#5c5c5c];
+ padding:$BodyTDCellSpaceing[6px];
+}
+/*--------------------------------------------------- COMMON USAGE CSS -------------------------------------------------------------------------------------------*/
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clearDiv {
+    clear: both;
+}
+.page-width {
+    width: 960px;
+    margin: 0 auto;
+}
+/*--------------------------------------------------- TOP AREA CSS -----------------------------------------------------------------------------------------*/
+.bannerImage img {
+    display: block;
+}
+.themeBrandingArea {
+    padding-top: 20px;
+}
+.themeBrandingContainer {
+    display: table;
+    border: 0 solid;
+    width: 100%;
+}
+.tableRow {
+    display: table-row;
+}
+.tableCell {
+    display: table-cell
+}
+.themeLogoOuterContainer {
+    width: 1%;
+}
+.themeLogoArea {
+    padding-right: 20px;
+}
+.themeSitenameCaptionOuterContainer {
+    vertical-align: middle;
+    height: 100%
+}
+.themeSitenameCaptionInnerContainer {
+    height: 100%;
+    padding: 0
+}
+.themeSitenameCaptionContainer {
+    vertical-align: middle;
+    height: 100%;
+}
+.themeSitename {
+    white-space: nowrap;
+ font-size:$SiteNameFontSize[36px];
+ color:$SiteNameTextColor[#303b30];
+ font-family:$SiteNameFontFamily[ "B Yekan", Arial, Helvetica, sans-serif];
+    letter-spacing: -1px;
+    padding-bottom: 5px;
+}
+.themeCaption {
+    white-space: nowrap;
+ font-size:$CaptionFontSize[18px];
+ color:$CaptionTextColor[#515749];
+ font-family:$CaptionFontFamily["B Yekan", Georgia, "Times New Roman", Times, serif];
+    font-style: italic;
+}
+/*--------------------------------------------------- MENU AREA CSS ----------------------------------------------------------------------------------------*/
+.menuContainer {
+    height: 55px;
+    border-bottom: 3px solid #333432;
+}
+.navCont {
+    width: 79%;
+    float: left;
+}
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#navigation li {
+    display: block;
+    float: left;
+    cursor: pointer;
+    padding: 0;
+ background-color:$NavigationBGColor[transparent];
+ background-image:$NavigationBGImage[none];
+background-repeat:$NavigationBGRepeat[repeat-x];
+background-position:$NavigationBGPosition[left top];
+}
+#navigation li a {
+    text-decoration: none;
+ color:$NavigationAColor[#000000];
+    float: left;
+    padding-right: 45px;
+ font-family:$NavigationFontFamily[Georgia, "Times New Roman", Times, serif];
+ font-size:$NavigationFontSize[12px];
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 4.6;
+}
+#navigation li a span {
+    float: left;
+    background: url(images/menustyle.png) left no-repeat;
+    padding: 0 0 0 15px;
+}
+#navigation li:hover a span, #navigation li.selected a span, #navigation li.active a span {
+    float: left;
+    background: url(images/menustyleHover.png) left no-repeat;
+    padding: 0 0 0 15px;
+}
+#navigation li:hover, #navigation li.selected, #navigation li.active {
+ color:$NavigtionAHoverColor[#79b400];
+    border-bottom: 3px solid #79b400;
+ background-color:$NavigationBGSelectedColor[transparent];
+ background-image:$NavigationBGSelectedImage[none];
+background-repeat:$NavigationBGSelectedRepeat[repeat-x];
+background-position:$NavigationBGSelectedPosition[left top];
+}
+#navigation li:hover a, #navigation li.selected a, #navigation li.active a {
+ color:$NavigationAHoverColor[#79b400];
+}
+#navigation li.navArrow a em, #navigation li:hover.navArrow a em, #navigation li.active.navArrow a em, #navigation li.selected.navArrow a em {
+    background: url(images/navArrow.png) no-repeat scroll 0 0;
+    display: block;
+    height: 9px;
+    width: 9px;
+    margin: 25px 0 0 15px;
+    float: left
+}
+#navigation li:hover.navArrow a em, #navigation li.active.navArrow a em, #navigation li.selected.navArrow a em {
+    background: url(images/navArrow1.png) no-repeat scroll 0 0;
+}
+.submenu {
+ background-color:$SubmenuBGColor[#ffffff];
+background-image:$SubmenuBGImage[none];
+background-position:$SubmenuBGPosition[top left];
+background-repeat:$SubmenuBGRepeat[repeat];
+ border-width:$SubmenuBorderWidth[1px];
+border-style:$SubmenuBorderStyle[solid];
+border-color:$SubmenuBorderColor[#b5b5b5];
+ border-radius:$SubmenuBorderRadius[0px];
+-moz-border-radius:$SubmenuBorderRadius[0px];
+-webkit-border-radius:$SubmenuBorderRadius[0px];
+-o-border-radius:$SubmenuBorderRadius[0px];
+ font-family:$SubmenuFontFamily[Georgia, "Times New Roman", Times, serif];
+    width: 200px;
+    position: absolute;
+    display: block;
+    -webkit-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    -moz-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    -o-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    -ms-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+.submenu ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    line-height: 0;
+}
+.submenu li {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.submenu li a {
+ color:$SubmenuTextColor[#5c5c5c];
+ font-size:$SubmenuFontSize[12px];
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    line-height: 1.7;
+    float: left;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 7px 0;
+}
+.submenu li a:hover {
+ color:$SubmenuTextHoverColor[#79b400];
+background-color:$SubmenuBGHoverColor[#f1f1f1];
+background-image:$SubmenuBGHoverImage[none];
+background-position:$SubmenuBGHoverPosition[top left];
+background-repeat:$SubmenuBGHoverRepeat[repeat];
+}
+.submenu li a span {
+    width: 175px;
+    float: left;
+    padding-left: 5px;
+    word-wrap: break-word;
+}
+.submenu li a em {
+    width: 10px;
+    float: left;
+    height: 10px;
+}
+.submenu li.navArrow a em, .submenu li:hover.navArrow a em {
+    background: transparent url(images/navArrow2.png) no-repeat scroll center left;
+    float: left;
+    height: 11px;
+    width: 10px;
+    margin-left: 7px;
+    margin-top: 6px;
+}
+.submenu li:hover.navArrow a em {
+    background: transparent url(images/navArrow2.png) no-repeat scroll center left;
+}
+/*--------------------------------------------------- CONTENT AREA CSS -------------------------------------------------------------------------------------*/
+.contentContainer {
+ background-color:$ContentBGColor[transparent];
+ background-image:$ContentBGImage[none];
+ background-position:$ContentBGPosition[0 0];
+ background-repeat:$ContentBGRepeat[no-repeat];
+ background-attachment:$ContentBGAttachment[scroll];
+ background-size:$ContentBGSize[auto];
+ box-shadow: $ContentBoxOuterShadowXaxis[0px] $ContentBoxOuterShadowYaxis[0px] $ContentBoxOuterShadowBlur[0px] $ContentBoxOuterShadowSpread[0px] $ContentBoxOuterShadowColor[transparent], $ContentBoxInnerShadowXaxis[0px] $ContentBoxInnerShadowYaxis[0px] $ContentBoxInnerShadowBlur[0px] $ContentBoxInnerShadowSpread[0px] $ContentBoxInnerShadowColor[transparent] inset;
+ -webkit-box-shadow: $ContentBoxOuterShadowXaxis[0px] $ContentBoxOuterShadowYaxis[0px] $ContentBoxOuterShadowBlur[0px] $ContentBoxOuterShadowSpread[0px] $ContentBoxOuterShadowColor[transparent], $ContentBoxInnerShadowXaxis[0px] $ContentBoxInnerShadowYaxis[0px] $ContentBoxInnerShadowBlur[0px] $ContentBoxInnerShadowSpread[0px] $ContentBoxInnerShadowColor[transparent] inset;
+ -moz-box-shadow: $ContentBoxOuterShadowXaxis[0px] $ContentBoxOuterShadowYaxis[0px] $ContentBoxOuterShadowBlur[0px] $ContentBoxOuterShadowSpread[0px] $ContentBoxOuterShadowColor[transparent], $ContentBoxInnerShadowXaxis[0px] $ContentBoxInnerShadowYaxis[0px] $ContentBoxInnerShadowBlur[0px] $ContentBoxInnerShadowSpread[0px] $ContentBoxInnerShadowColor[transparent] inset;
+ -o-box-shadow: $ContentBoxOuterShadowXaxis[0px] $ContentBoxOuterShadowYaxis[0px] $ContentBoxOuterShadowBlur[0px] $ContentBoxOuterShadowSpread[0px] $ContentBoxOuterShadowColor[transparent], $ContentBoxInnerShadowXaxis[0px] $ContentBoxInnerShadowYaxis[0px] $ContentBoxInnerShadowBlur[0px] $ContentBoxInnerShadowSpread[0px] $ContentBoxInnerShadowColor[transparent] inset;
+ border-width: $ContentBorderWidth[0];
+ border-style:$ContentBorderStyle[none];
+ border-color:$ContentBorderColor[transparent];
+ border-radius: $ContentBorderRadius[0];
+ -moz-border-radius:$ContentBorderRadius[0];
+ -webkit-border-radius:$ContentBorderRadius[0];
+ -o-border-radius:$ContentBorderRadius[0];
+    padding: 30px 0;
+    overflow: hidden;
+    clear: both;
+}
+.contentArea {
+    width: 70%;
+}
+.sidebarArea {
+    width: 30%;
+}
+.breadcrumb {
+    margin-bottom: 30px;
+    background: #f1f1f1;
+    padding: 8px;
+}
+.breadcrumb span {
+    padding: 0 3px;
+}
+.breadcrumb p {
+    word-wrap: break-word;
+}
+.contentAreaSpace {
+    min-height: 400px;
+    height: auto !important;
+    height: 400px;
+}
+.sidebarAreaSpace {
+    min-height: 300px;
+    height: auto !important;
+    height: 300px;
+}
+.sidebarAreaInner {
+ background-color:$SidebarBGColor[#f9f9f9];
+ background-image:$SidebarBGImage[none];
+ background-position:$SidebarBGPosition[0 0];
+ background-repeat:$SidebarBGRepeat[no-repeat];
+ background-attachment:$SidebarBGAttachment[scroll];
+ background-size:$SidebarBGSize[auto];
+ box-shadow: $SidebarBoxOuterShadowXaxis[0px] $SidebarBoxOuterShadowYaxis[0px] $SidebarBoxOuterShadowBlur[0px] $SidebarBoxOuterShadowSpread[0px] $SidebarBoxOuterShadowColor[transparent], $SidebarBoxInnerShadowXaxis[0px] $SidebarBoxInnerShadowYaxis[0px] $SidebarBoxInnerShadowBlur[0] $SidebarBoxInnerShadowSpread[0] $SidebarBoxInnerShadowColor[transparent] inset;
+ -webkit-box-shadow: $SidebarBoxOuterShadowXaxis[0px] $SidebarBoxOuterShadowYaxis[0px] $SidebarBoxOuterShadowBlur[0px] $SidebarBoxOuterShadowSpread[0px] $SidebarBoxOuterShadowColor[transparent], $SidebarBoxInnerShadowXaxis[0px] $SidebarBoxInnerShadowYaxis[0px] $SidebarBoxInnerShadowBlur[0] $SidebarBoxInnerShadowSpread[0] $SidebarBoxInnerShadowColor[transparent] inset;
+ -moz-box-shadow: $SidebarBoxOuterShadowXaxis[0px] $SidebarBoxOuterShadowYaxis[0px] $SidebarBoxOuterShadowBlur[0px] $SidebarBoxOuterShadowSpread[0px] $SidebarBoxOuterShadowColor[transparent], $SidebarBoxInnerShadowXaxis[0px] $SidebarBoxInnerShadowYaxis[0px] $SidebarBoxInnerShadowBlur[0] $SidebarBoxInnerShadowSpread[0] $SidebarBoxInnerShadowColor[transparent] inset;
+ -o-box-shadow: $SidebarBoxOuterShadowXaxis[0px] $SidebarBoxOuterShadowYaxis[0px] $SidebarBoxOuterShadowBlur[0px] $SidebarBoxOuterShadowSpread[0px] $SidebarBoxOuterShadowColor[transparent], $SidebarBoxInnerShadowXaxis[0px] $SidebarBoxInnerShadowYaxis[0px] $SidebarBoxInnerShadowBlur[0] $SidebarBoxInnerShadowSpread[0] $SidebarBoxInnerShadowColor[transparent] inset;
+ border-width:$SidebarBorderWidth[1px];
+ border-style:$SidebarBorderStyle[solid];
+ border-color:$SidebarBorderColor[#d3d3d3];
+ border-radius: $SidebarBorderRadius[0];
+ -moz-border-radius:$SidebarBorderRadius[0];
+ -webkit-border-radius:$SidebarBorderRadius[0];
+ -o-border-radius:$SidebarBorderRadius[0];
+    margin-left: 30px;
+    overflow: hidden;
+    padding: 15px;
+ font-family:$SidebarFontFamily[ "B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarFontSize[12px];
+ color:$SidebarTextColor[#5C5C5C];
+}
+.sidebarAreaInner h1 {
+ font-family:$SidebarH1FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarH1FontSize[24px];
+ color:$SidebarH1TextColor[#333432];
+}
+.sidebarAreaInner h2 {
+ font-family:$SidebarH2FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarH2FontSize[22px];
+ color:$SidebarH2TextColor[#333432];
+}
+.sidebarAreaInner h3 {
+ font-family:$SidebarH3FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarH3FontSize[20px];
+ color:$SidebarH3TextColor[#333432];
+}
+.sidebarAreaInner h4 {
+ font-family:$SidebarH4FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarH4FontSize[18px];
+ color:$SidebarH4TextColor[#333432];
+}
+.sidebarAreaInner h5 {
+ font-family:$SidebarH5FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarH5FontSize[16px];
+ color:$SidebarH5TextColor[#333432];
+}
+.sidebarAreaInner h6 {
+ font-family:$SidebarH6FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarH6FontSize[14px];
+ color:$SidebarH6TextColor[#333432];
+}
+.sidebarAreaInner a {
+ text-decoration:$SidebarATextDecoration[none];
+ color:$SidebarAColor[#79B400];
+}
+.sidebarAreaInner a:hover {
+ text-decoration:$SidebarAHoverTextDecoration[none];
+ color:$SidebarAHoverColor[#79B400];
+}
+.sidebarAreaInner form li span input[type=text], .sidebarAreaInner form li span textarea, .sidebarAreaInner form li span select {
+ font-family:$SidebarFontFamily["B Yekan",  Arial, Helvetica, sans-serif];
+ font-size:$SidebarFontSize[12px];
+ color:$SidebarTextColor[#5C5C5C];
+    width: 175px;
+}
+.sidebarAreaInner form li input[type=submit], .sidebarAreaInner form li input[type=reset] {
+font-family:$SidebarFontFamily["B Yekan",Arial, Helvetica, sans-serif]
+}
+.sidebarAreaInner form li span select {
+    width: 188px;
+}
+.sidebarAreaInner form ul li label, .sidebarAreaInner form ul li div {
+    padding: 5px 0;
+    float: none;
+}
+.sidebarAreaInner th {
+ font-family:$SidebarTHFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarTHFontSize[12px];
+ background:$SidebarTHBGColor[#f0f0f0];
+ border-width:$SidebarTHBorderWidth[1px];
+ border-style:$SidebarTHBorderStyle[solid];
+ border-color:$SidebarTHBorderColor[#dbdbdb];
+ color:$SidebarTHTextColor[#5c5c5c];
+ padding:$SidebarTHCellSpaceing[6px];
+}
+.sidebarAreaInner td {
+ font-family:$SidebarTDFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarTDFontSize[12px];
+ background:$SidebarTDBGColor[#f8f8f8];
+ border-width:$SidebarTDBorderWidth[1px];
+ border-style:$SidebarTDBorderStyle[solid];
+ border-color:$SidebarTDBorderColor[#dbdbdb];
+ color:$SidebarTDTextColor[#5c5c5c];
+ padding:$SidebarTDCellSpaceing[6px];
+}
+.sidebarAreaInner .zs-highlight-box {
+ background-color: $SidebarHighlightBoxBGColor[#f5f5f5];
+ background-image: $SidebarHighlightBoxBGImage[none];
+ background-image: $SidebarHighlightBoxBGImage[none], -moz-linear-gradient($SidebarHighlightBoxGradientDirection[top], $SidebarHighlightBoxGradientStartColor[#ffffff 84%], $SidebarHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-image: $SidebarHighlightBoxBGImage[none], -webkit-linear-gradient($SidebarHighlightBoxGradientDirection[top], $SidebarHighlightBoxGradientStartColor[#ffffff 84%], $SidebarHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-image: $SidebarHighlightBoxBGImage[none], -o-linear-gradient($SidebarHighlightBoxGradientDirection[top], $SidebarHighlightBoxGradientStartColor[#ffffff 84%], $SidebarHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-position: $SidebarHighlightBoxBGPosition[top left];
+ background-repeat: $SidebarHighlightBoxBGRepeat[no-repeat];
+ box-shadow: $SidebarHighlightBoxOuterXaxis[3px] $SidebarHighlightBoxOuterYaxis[3px] $SidebarHighlightBoxOuterBlur[0] $SidebarHighlightBoxOuterSpread[0px] $SidebarHighlightBoxOuterShadowColor[#f1f0f0], $SidebarHighlightBoxInnerXaxis[0px] $SidebarHighlightBoxInnerYaxis[0px] $SidebarHighlightBoxInnerBlur[0px] $SidebarHighlightBoxInnerSpread[0] $SidebarHighlightBoxInnerShadowColor[transparent] inset;
+ -moz-box-shadow: $SidebarHighlightBoxOuterXaxis[3px] $SidebarHighlightBoxOuterYaxis[3px] $SidebarHighlightBoxOuterBlur[0] $SidebarHighlightBoxOuterSpread[0px] $SidebarHighlightBoxOuterShadowColor[#f1f0f0], $SidebarHighlightBoxInnerXaxis[0px] $SidebarHighlightBoxInnerYaxis[0px] $SidebarHighlightBoxInnerBlur[0px] $SidebarHighlightBoxInnerSpread[0] $SidebarHighlightBoxInnerShadowColor[transparent] inset;
+ -webkit-box-shadow: $SidebarHighlightBoxOuterXaxis[3px] $SidebarHighlightBoxOuterYaxis[3px] $SidebarHighlightBoxOuterBlur[0] $SidebarHighlightBoxOuterSpread[0px] $SidebarHighlightBoxOuterShadowColor[#f1f0f0], $SidebarHighlightBoxInnerXaxis[0px] $SidebarHighlightBoxInnerYaxis[0px] $SidebarHighlightBoxInnerBlur[0px] $SidebarHighlightBoxInnerSpread[0] $SidebarHighlightBoxInnerShadowColor[transparent] inset;
+ -o-box-shadow: $SidebarHighlightBoxOuterXaxis[3px] $SidebarHighlightBoxOuterYaxis[3px] $SidebarHighlightBoxOuterBlur[0] $SidebarHighlightBoxOuterSpread[0px] $SidebarHighlightBoxOuterShadowColor[#f1f0f0], $SidebarHighlightBoxInnerXaxis[0px] $SidebarHighlightBoxInnerYaxis[0px] $SidebarHighlightBoxInnerBlur[0px] $SidebarHighlightBoxInnerSpread[0] $SidebarHighlightBoxInnerShadowColor[transparent] inset;
+ border-width: $SidebarHighlightBoxBorderWidth[1px];
+ border-style:$SidebarHighlightBoxBorderStyle[solid];
+ border-color:$SidebarHighlightBoxBorderColor[#e2e2e2];
+ border-radius: $SidebarHighlightBoxBorderRadius[0];
+ -moz-border-radius:$SidebarHighlightBoxBorderRadius[0];
+ -webkit-border-radius:$SidebarHighlightBoxBorderRadius[0];
+ -o-border-radius:$SidebarHighlightBoxBorderRadius[0];
+ padding: $SidebarHighlightBoxInnerSpace[10px];
+ margin: $SidebarHighlightBoxOuterSpace[4px];
+    min-height: 200px;
+font-family:$SidebarHighlightBoxFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarHighlightBoxFontSize[12px];
+ color:$SidebarHighlightBoxTextColor[#5c5c5c];
+}
+.sidebarAreaInner .zs-highlight-box h1 {
+font-family:$SidebarHighlightBoxH1FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$SidebarHighlightBoxH1FontSize[24px];
+color:$SidebarHighlightBoxH1TextColor[#333432];
+}
+.sidebarAreaInner .zs-highlight-box h2 {
+font-family:$SidebarHighlightBoxH2FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$SidebarHighlightBoxH2FontSize[22px];
+color:$SidebarHighlightBoxH2TextColor[#333432];
+}
+.sidebarAreaInner .zs-highlight-box h3 {
+font-family:$SidebarHighlightBoxH3FontFamily["B Yekan","B Yekan", Arial, Helvetica, sans-serif];
+font-size:$SidebarHighlightBoxH3FontSize[20px];
+color:$SidebarHighlightBoxH3TextColor[#333432];
+}
+.sidebarAreaInner .zs-highlight-box h4 {
+font-family:$SidebarHighlightBoxH4FontFamily["B Yekan","B Yekan", Arial, Helvetica, sans-serif];
+font-size:$SidebarHighlightBoxH4FontSize[18px];
+color:$SidebarHighlightBoxH4TextColor[#333432];
+}
+.sidebarAreaInner .zs-highlight-box h5 {
+font-family:$SidebarHighlightBoxH5FontFamily["B Yekan","B Yekan", Arial, Helvetica, sans-serif];
+font-size:$SidebarHighlightBoxH5FontSize[16px];
+color:$SidebarHighlightBoxH5TextColor[#333432];
+}
+.sidebarAreaInner .zs-highlight-box h6 {
+font-family:$SidebarHighlightBoxH6FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$SidebarHighlightBoxH6FontSize[14px];
+color:$SidebarHighlightBoxH6TextColor[#333432];
+}
+.sidebarAreaInner .zs-highlight-box a {
+color:$SidebarHighlightBoxAColor[#79b400];
+text-decoration:$SidebarHighlightBoxATextDecoration[none];
+}
+.sidebarAreaInner .zs-highlight-box a:hover {
+text-decoration:$SidebarHighlightBoxAHoverTextDecoration[none];
+color:$SidebarHighlightBoxAHoverColor[#79b400];
+}
+.sidebarAreaInner .zs-highlight-box th {
+ font-family:$SidebarHighlightBoxTHFontFamily["B Yekan","B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarHighlightBoxTHFontSize[12px];
+ background:$SidebarHighlightBoxTHBGColor[#f0f0f0];
+ border-width:$SidebarHighlightBoxTHBorderWidth[1px];
+ border-style:$SidebarHighlightBoxTHBorderStyle[solid];
+ border-color:$SidebarHighlightBoxTHBorderColor[#dbdbdb];
+ color:$SidebarHighlightBoxTHTextColor[#5c5c5c];
+ padding:$SidebarHighlightBoxTHCellSpaceing[6px];
+}
+.sidebarAreaInner .zs-highlight-box td {
+ font-family:$SidebarHighlightBoxTDFontFamily["B Yekan","B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$SidebarHighlightBoxTDFontSize[12px];
+ background:$SidebarHighlightBoxTDBGColor[#f8f8f8];
+ border-width:$SidebarHighlightBoxTDBorderWidth[1px];
+ border-style:$SidebarHighlightBoxTDBorderStyle[solid];
+ border-color:$SidebarHighlightBoxTDBorderColor[#dbdbdb];
+ color:$SidebarHighlightBoxTDTextColor[#5c5c5c];
+ padding:$SidebarHighlightBoxTDCellSpaceing[6px];
+}
+.sidebarAreaInner .zs-highlight-box form li span input[type=text], .sidebarAreaInner .zs-highlight-box form li span textarea, .sidebarAreaInner .zs-highlight-box form li span select {
+    width: 145px;
+}
+.sidebarAreaInner .zs-highlight-box form li span select {
+    width: 158px;
+}
+/*----------------------------------- THEME SIDEBAR AREA HIGHLIGHT BOX NEWSLETTER CSS -----------------------------------------------*/
+
+.sidebarAreaInner .zs-highlight-box .newsletter-input-field {
+    width: 175px;
+}
+.sidebarAreaInner .zs-highlight-box .newsletter-layout-3 .newsletter-form {
+    width: 175px;
+}
+.sidebarAreaInner .zs-tabs-accordion-content .newsletter-input-field {
+    width: 175px;
+}
+.sidebarAreaInner .zs-tabs-accordion-content .newsletter-layout-3 .newsletter-form {
+    width: 175px;
+}
+/*----------------------------------- TEXT HIGHLIGHT CSS  -----------------------------------------------*/
+.sidebarAreaInner .zs-text-light-color {
+color:$SidebarTextLightColor[#BBBBBB];
+}
+.sidebarAreaInner .zs-text-highlight-color {
+color:$SidebarTextHighlightColor[#333432];
+}
+.sidebarAreaInner .zs-highlight-box .zs-text-light-color {
+color:$SidebarHighlightBoxTextLightColor[#BBBBBB];
+}
+.sidebarAreaInner .zs-highlight-box .zs-text-highlight-color {
+color:$SidebarHighlightBoxTextHighlightColor[#333432];
+}
+/*--------------------- THEME SIDEBAR TABS ACCORDION AREA CSS ---------------------*/
+.sidebarAreaInner .zs-tabs ul, .sidebarAreaInner .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+.sidebarAreaInner .zs-tabs ul li, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li {
+    float: left;
+    margin: 0px 2px 0px 0;
+    padding: 0;
+}
+.sidebarAreaInner .zs-tabs ul li div, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li div {
+    cursor: pointer;
+    position: relative;
+    padding: 0 20px;
+    color: #5c5c5c;
+    margin: 0 0 -1px;
+    line-height: 2.8;
+    background: #eeeeee;
+    border-top: 2px solid transparent;
+    border-bottom: 1px solid #e8e8e8;
+}
+.sidebarAreaInner .zs-tabs ul li.selected div, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #ffffff;
+    border-top: 3px solid #79b400;
+    padding-top: 0;
+    color: #79b400;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 0;
+}
+.sidebarAreaInner .zs-tabs-accordion-content, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    display: none;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+    clear: both;
+    border-top: 0;
+    margin-bottom: 5px;
+    color: #5c5c5c;
+}
+.sidebarAreaInner .zs-accordion, .sidebarAreaInner .zs-highlight-box .zs-accordion {
+    color: #595959;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: block;
+    background: #eeeeee;
+    border: 1px solid #E1E1E1;
+}
+.sidebarAreaInner .zs-accordion.selected, .sidebarAreaInner .zs-highlight-box .zs-accordion.selected {
+    background: #79b400;
+    color: #ffffff;
+    margin-bottom: 0px;
+    border-color: #79b400;
+}
+/*---------------------------------- THEME SIDEBAR AREA HIGHLIGHT BOX TABS ACCORDION AREA CSS START ------------------------------------*/
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content {
+    padding: 10px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h1, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h2, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h3, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h4, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h5, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #333432;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content a, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #79b400;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #ced0cc;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #f0f0f0;
+    border-color: #dbdbdb;
+    color: #5c5c5c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content td {
+    background: #f8f8f8;
+    border-color: #dbdbdb;
+    color: #5c5c5c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    width: 115px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    width: 128px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li input[type="submit"], .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li input[type="reset"] {
+    padding: 6px 15px;
+}
+/*--------------------------------------------------- FOOTER AREA CSS -------------------------------------------------------------------------------------*/
+.footer {
+ background-color:$FooterBGColor[transparent];
+ background-image:$FooterBGImage[url(images/footerbg.png)];
+ background-position:$FooterBGPosition[left bottom];
+ background-repeat:$FooterBGRepeat[repeat-x];
+ background-attachment:$FooterBGAttachment[scroll];
+ background-size:$FooterBGSize[auto];
+ -moz-box-shadow: $FooterBoxOuterShadowXaxis[0px] $FooterBoxOuterShadowYaxis[0px] $FooterBoxOuterShadowBlur[0] $FooterBoxOuterShadowSpread[0px] $FooterBoxOuterShadowColor[transparent], $FooterBoxInnerShadowXaxis[0px] $FooterBoxInnerShadowYaxis[0px] $FooterBoxInnerShadowBlur[0px] $FooterBoxInnerShadowSpread[0] $FooterBoxInnerShadowColor[transparent] inset;
+ -o-box-shadow: $FooterBoxOuterShadowXaxis[0px] $FooterBoxOuterShadowYaxis[0px] $FooterBoxOuterShadowBlur[0] $FooterBoxOuterShadowSpread[0px] $FooterBoxOuterShadowColor[transparent], $FooterBoxInnerShadowXaxis[0px] $FooterBoxInnerShadowYaxis[0px] $FooterBoxInnerShadowBlur[0px] $FooterBoxInnerShadowSpread[0] $FooterBoxInnerShadowColor[transparent] inset;
+ -webkit-box-shadow: $FooterBoxOuterShadowXaxis[0px] $FooterBoxOuterShadowYaxis[0px] $FooterBoxOuterShadowBlur[0] $FooterBoxOuterShadowSpread[0px] $FooterBoxOuterShadowColor[transparent], $FooterBoxInnerShadowXaxis[0px] $FooterBoxInnerShadowYaxis[0px] $FooterBoxInnerShadowBlur[0px] $FooterBoxInnerShadowSpread[0] $FooterBoxInnerShadowColor[transparent] inset;
+ box-shadow: $FooterBoxOuterShadowXaxis[0px] $FooterBoxOuterShadowYaxis[0px] $FooterBoxOuterShadowBlur[0] $FooterBoxOuterShadowSpread[0px] $FooterBoxOuterShadowColor[transparent], $FooterBoxInnerShadowXaxis[0px] $FooterBoxInnerShadowYaxis[0px] $FooterBoxInnerShadowBlur[0px] $FooterBoxInnerShadowSpread[0] $FooterBoxInnerShadowColor[transparent] inset;
+ border-width:$FooterBorderWidth[3px 0 0];
+ border-style:$FooterBorderStyle[solid];
+ border-color:$FooterBorderColor[#333432];
+ border-radius: $FooterBorderRadius[0];
+ -moz-border-radius:$FooterBorderRadius[0];
+ -webkit-border-radius:$FooterBorderRadius[0];
+ -o-border-radius:$FooterBorderRadius[0];
+    padding: 20px 0;
+    overflow: hidden;
+    min-height: 10px;
+    height: auto !important;
+    height: 10px;
+ font-family:$FooterFontFamily[ "B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterFontSize[ 12px];
+ color:$FooterTextColor[#5c5c5c];
+}
+.footer h1 {
+ font-family:$FooterH1FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterH1FontSize[24px];
+ color:$FooterH1TextColor[#333432];
+}
+.footer h2 {
+ font-family:$FooterH2FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterH2FontSize[22px];
+ color:$FooterH2TextColor[#333432];
+}
+.footer h3 {
+ font-family:$FooterH3FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterH3FontSize[20px];
+ color:$FooterH3TextColor[#333432];
+}
+.footer h4 {
+ font-family:$FooterH4FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterH4FontSize[18px];
+ color:$FooterH4TextColor[#333432];
+}
+.footer h5 {
+ font-family:$FooterH5FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterH5FontSize[16px];
+ color:$FooterH5TextColor[#333432];
+}
+.footer h6 {
+ font-family:$FooterH6FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterH6FontSize[14px];
+ color:$FooterH6TextColor[#333432];
+}
+.footer a {
+ text-decoration:$FooterATextDecoration[none];
+ color:$FooterAColor[#79B400];
+}
+.footer a:hover {
+ text-decoration:$FooterAHoverTextDecoration[none];
+ color:$FooterAHoverColor[#79B400];
+}
+.footer form li span input[type=text], .footer form li span textarea, .footer form li span select {
+ font-family:$FooterFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterFontSize[12px];
+ color:$FooterTextColor[#5c5c5c];
+}
+.footer form li input[type=submit], .footer form li input[type=reset] {
+font-family:$FooterFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+}
+.footer th {
+ font-family:$FooterTHFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterTHFontSize[12px];
+ background:$FooterTHBGColor[#f0f0f0];
+ border-width:$FooterTHBorderWidth[1px];
+ border-style:$FooterTHBorderStyle[solid];
+ border-color:$FooterTHBorderColor[#dbdbdb];
+ color:$FooterTHTextColor[#5c5c5c];
+ padding:$FooterTHCellSpaceing[6px];
+}
+.footer td {
+ font-family:$FooterTDFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterTDFontSize[12px];
+ background:$FooterTDBGColor[#f8f8f8];
+ border-width:$FooterTDBorderWidth[1px];
+ border-style:$FooterTDBorderStyle[solid];
+ border-color:$FooterTDBorderColor[#dbdbdb];
+ color:$FooterTDTextColor[#5c5c5c];
+ padding:$FooterTDCellSpaceing[6px];
+}
+.footer .zs-highlight-box {
+ background-color: $FooterHighlightBoxBGColor[#f5f5f5];
+ background-image: $FooterHighlightBoxBGImage[none];
+ background-image: $FooterHighlightBoxBGImage[none], -moz-linear-gradient($FooterHighlightBoxGradientDirection[top], $FooterHighlightBoxGradientStartColor[#ffffff 84%], $FooterHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-image: $FooterHighlightBoxBGImage[none], -webkit-linear-gradient($FooterHighlightBoxGradientDirection[top], $FooterHighlightBoxGradientStartColor[#ffffff 84%], $FooterHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-image: $FooterHighlightBoxBGImage[none], -o-linear-gradient($FooterHighlightBoxGradientDirection[top], $FooterHighlightBoxGradientStartColor[#ffffff 84%], $FooterHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-position: $FooterHighlightBoxBGPosition[top left];
+ background-repeat: $FooterHighlightBoxBGRepeat[no-repeat];
+ box-shadow: $FooterHighlightBoxOuterXaxis[3px] $FooterHighlightBoxOuterYaxis[3px] $FooterHighlightBoxOuterBlur[0] $FooterHighlightBoxOuterSpread[0px] $FooterHighlightBoxOuterShadowColor[#f9f9f9], $FooterHighlightBoxInnerXaxis[0px] $FooterHighlightBoxInnerYaxis[0px] $FooterHighlightBoxInnerBlur[0px] $FooterHighlightBoxInnerSpread[0] $FooterHighlightBoxInnerShadowColor[transparent] inset;
+ -moz-box-shadow: $FooterHighlightBoxOuterXaxis[3px] $FooterHighlightBoxOuterYaxis[3px] $FooterHighlightBoxOuterBlur[0] $FooterHighlightBoxOuterSpread[0px] $FooterHighlightBoxOuterShadowColor[#f9f9f9], $FooterHighlightBoxInnerXaxis[0px] $FooterHighlightBoxInnerYaxis[0px] $FooterHighlightBoxInnerBlur[0px] $FooterHighlightBoxInnerSpread[0] $FooterHighlightBoxInnerShadowColor[transparent] inset;
+ -webkit-box-shadow: $FooterHighlightBoxOuterXaxis[3px] $FooterHighlightBoxOuterYaxis[3px] $FooterHighlightBoxOuterBlur[0] $FooterHighlightBoxOuterSpread[0px] $FooterHighlightBoxOuterShadowColor[#f9f9f9], $FooterHighlightBoxInnerXaxis[0px] $FooterHighlightBoxInnerYaxis[0px] $FooterHighlightBoxInnerBlur[0px] $FooterHighlightBoxInnerSpread[0] $FooterHighlightBoxInnerShadowColor[transparent] inset;
+ -o-box-shadow: $FooterHighlightBoxOuterXaxis[3px] $FooterHighlightBoxOuterYaxis[3px] $FooterHighlightBoxOuterBlur[0] $FooterHighlightBoxOuterSpread[0px] $FooterHighlightBoxOuterShadowColor[#f9f9f9], $FooterHighlightBoxInnerXaxis[0px] $FooterHighlightBoxInnerYaxis[0px] $FooterHighlightBoxInnerBlur[0px] $FooterHighlightBoxInnerSpread[0] $FooterHighlightBoxInnerShadowColor[transparent] inset;
+ border-width: $FooterHighlightBoxBorderWidth[1px];
+ border-style:$FooterHighlightBoxBorderStyle[solid];
+ border-color:$FooterHighlightBoxBorderColor[#e2e2e2];
+ border-radius: $FooterHighlightBoxBorderRadius[0];
+ -moz-border-radius:$FooterHighlightBoxBorderRadius[0];
+ -webkit-border-radius:$FooterHighlightBoxBorderRadius[0];
+ -o-border-radius:$FooterHighlightBoxBorderRadius[0];
+ padding: $FooterHighlightBoxInnerSpace[10px];
+ margin: $FooterHighlightBoxOuterSpace[4px];
+    min-height: 200px;
+font-family:$FooterHighlightBoxFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterHighlightBoxFontSize[12px];
+ color:$FooterHighlightBoxTextColor[#5c5c5c];
+}
+.footer .zs-highlight-box h1 {
+font-family:$FooterHighlightBoxH1FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$FooterHighlightBoxH1FontSize[24px];
+color:$FooterHighlightBoxH1TextColor[#333432];
+}
+.footer .zs-highlight-box h2 {
+font-family:$FooterHighlightBoxH2FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$FooterHighlightBoxH2FontSize[22px];
+color:$FooterHighlightBoxH2TextColor[#333432];
+}
+.footer .zs-highlight-box h3 {
+font-family:$FooterHighlightBoxH3FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$FooterHighlightBoxH3FontSize[20px];
+color:$FooterHighlightBoxH3TextColor[#333432];
+}
+.footer .zs-highlight-box h4 {
+font-family:$FooterHighlightBoxH4FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$FooterHighlightBoxH4FontSize[18px];
+color:$FooterHighlightBoxH4TextColor[#333432];
+}
+.footer .zs-highlight-box h5 {
+font-family:$FooterHighlightBoxH5FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$FooterHighlightBoxH5FontSize[16px];
+color:$FooterHighlightBoxH5TextColor[#333432];
+}
+.footer .zs-highlight-box h6 {
+font-family:$FooterHighlightBoxH6FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$FooterHighlightBoxH6FontSize[14px];
+color:$FooterHighlightBoxH6TextColor[#333432];
+}
+.footer .zs-highlight-box a {
+color:$FooterHighlightBoxAColor[#79b400];
+text-decoration:$FooterHighlightBoxATextDecoration[none];
+}
+.footer .zs-highlight-box a:hover {
+text-decoration:$FooterHighlightBoxAHoverTextDecoration[none];
+color:$FooterHighlightBoxAHoverColor[#79b400];
+}
+.footer .zs-highlight-box th {
+ font-family:$FooterHighlightBoxTHFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterHighlightBoxTHFontSize[12px];
+ background:$FooterHighlightBoxTHBGColor[#f0f0f0];
+ border-width:$FooterHighlightBoxTHBorderWidth[1px];
+ border-style:$FooterHighlightBoxTHBorderStyle[solid];
+ border-color:$FooterHighlightBoxTHBorderColor[#dbdbdb];
+ color:$FooterHighlightBoxTHTextColor[#5c5c5c];
+ padding:$FooterHighlightBoxTHCellSpaceing[6px];
+}
+.footer .zs-highlight-box td {
+ font-family:$FooterHighlightBoxTDFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$FooterHighlightBoxTDFontSize[12px];
+ background:$FooterHighlightBoxTDBGColor[#f8f8f8];
+ border-width:$FooterHighlightBoxTDBorderWidth[1px];
+ border-style:$FooterHighlightBoxTDBorderStyle[solid];
+ border-color:$FooterHighlightBoxTDBorderColor[#dbdbdb];
+ color:$FooterHighlightBoxTDTextColor[#5c5c5c];
+ padding:$FooterHighlightBoxTDCellSpaceing[6px];
+}
+/*----------------------------------- TEXT HIGHLIGHT CSS  -----------------------------------------------*/
+.footer .zs-text-light-color {
+color:$FooterTextLightColor[#BBBBBB];
+}
+.footer .zs-text-highlight-color {
+color:$FooterTextHighlightColor[#333432];
+}
+.footer .zs-highlight-box .zs-text-light-color {
+color:$FooterHighlightBoxTextLightColor[#BBBBBB];
+}
+.footer .zs-highlight-box .zs-text-highlight-color {
+color:$FooterHighlightBoxTextHighlightColor[#333432];
+}
+/*------------------------ THEME TABS ACCORDION AREA CSS START ------------------------------*/
+.footer .zs-tabs ul, .footer .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.footer .zs-tabs ul li, .footer .zs-highlight-box .zs-tabs ul li {
+    float: left;
+    margin: 0px 2px 0px 0;
+    padding: 0;
+}
+.footer .zs-tabs ul li div, .footer .zs-highlight-box .zs-tabs ul li div {
+    cursor: pointer;
+    position: relative;
+    padding: 0 20px;
+    color: #5c5c5c;
+    margin: 0 0 -1px;
+    line-height: 2.8;
+    background: #eeeeee;
+    border-top: 2px solid transparent;
+    border-bottom: 1px solid #e8e8e8;
+}
+.footer .zs-tabs ul li.selected div, .footer .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #ffffff;
+    border-top: 3px solid #79b400;
+    padding-top: 0;
+    color: #79b400;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 0;
+}
+.footer .zs-tabs-accordion-content, .footer .zs-highlight-box .zs-tabs-accordion-content {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    display: none;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+    clear: both;
+    border-top: 0;
+    margin-bottom: 5px;
+    color: #5c5c5c;
+}
+.footer .zs-accordion, .footer .zs-highlight-box .zs-accordion {
+    color: #595959;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: none;
+    background: #eeeeee;
+    border: 1px solid #e8e8e8;
+}
+.footer .zs-accordion.selected, .footer .zs-highlight-box .zs-accordion.selected {
+    background: #79b400;
+    color: #ffffff;
+    margin-bottom: 0px;
+    border-color: #79b400;
+}
+/*------------------------ THEME FOOTER AREA HIGHLIGHT BOX TABS ACCORDION AREA CSS START ------------------------------*/
+.footer .zs-highlight-box .zs-tabs-accordion-content h1, .footer .zs-highlight-box .zs-tabs-accordion-content h2, .footer .zs-highlight-box .zs-tabs-accordion-content h3, .footer .zs-highlight-box .zs-tabs-accordion-content h4, .footer .zs-highlight-box .zs-tabs-accordion-content h5, .footer .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #333432;
+}
+.footer .zs-highlight-box .zs-tabs-accordion-content a, .footer .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #79b400;
+}
+.footer .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #ced0cc;
+}
+.footer .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #f0f0f0;
+    border-color: #dbdbdb;
+    color: #5c5c5c;
+}
+.footer .zs-highlight-box .zs-tabs-accordion-content td {
+    background: #f8f8f8;
+    border-color: #dbdbdb;
+    color: #5c5c5c;
+}
+/*--------------------------------------------------- FORM AREA CSS -------------------------------------------------------------------------------------*/
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+}
+form li {
+    overflow: hidden;
+    padding: 10px 0 0;
+    margin: 0;
+}
+form ul li label, form ul li div {
+    width: auto;
+    padding: 5px 0 0;
+    color: #393333;
+    float: left;
+}
+form ul li label {
+    width: 200px;
+}
+form li span input, form li span label {
+    float: none;
+    width: auto;
+    margin: 4px;
+    padding: 0;
+}
+form li div span {
+    display: block;
+}
+form li span input[type=text], form li span textarea, form li span select {
+    width: 250px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    float: left;
+    padding: 5px;
+    margin: 0px;
+    resize: none;
+ font-family:$BodyFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$BodyFontSize[12px];
+ color:$BodyTextColor[#5c5c5c];
+}
+form li span select {
+    width: 260px;
+}
+form li span textarea {
+    height: 100px;
+    overflow: auto;
+}
+form li span button {
+    margin-left: 5px;
+    fcursor: pointer;
+}
+form .dateinvoker {
+    background: url(images/datePickerIcn.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    border: none;
+    vertical-align: middle;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+form li input[type=submit], form li input[type=reset], button {
+    background: #79b400;
+    padding: 6px 20px;
+    margin-right: 5px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 0;
+ font-family:$BodyFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+    font-size: 12px;
+}
+form li input[type=reset] {
+    background: #333432;
+}
+/*--------------------------------------------------- THEME SEARCH BOX AREA CSS -------------------------------------------------------------------------------------*/
+.searchContainer {
+    padding-top: 16px;
+    float: right;
+}
+.searchbox {
+    width: 195px;
+    height: 25px;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+}
+.searchbox input[type=text] {
+    background: transparent;
+    height: 25px;
+    border: 0;
+    outline: none;
+    line-height: 25px;
+    font-family: "B Yekan", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #5c5c5c;
+    padding: 0 5px;
+    width: 160px;
+}
+.searchbox input[type=submit] {
+    background: url(images/searchicon.png) center center no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0 none;
+    cursor: pointer;
+}
+/*-----------------------------------      THEME HIGHLIGHT BOX AREA CSS    -----------------------------------------------*/
+.zs-highlight-box {
+ background-color: $BodyHighlightBoxBGColor[#f5f5f5];
+ background-image: $BodyHighlightBoxBGImage[none];
+ background-image: $BodyHighlightBoxBGImage[none], -moz-linear-gradient($BodyHighlightBoxGradientDirection[top], $BodyHighlightBoxGradientStartColor[#ffffff 84%], $BodyHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-image: $BodyHighlightBoxBGImage[none], -webkit-linear-gradient($BodyHighlightBoxGradientDirection[top], $BodyHighlightBoxGradientStartColor[#ffffff 84%], $BodyHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-image: $BodyHighlightBoxBGImage[none], -o-linear-gradient($BodyHighlightBoxGradientDirection[top], $BodyHighlightBoxGradientStartColor[#ffffff 84%], $BodyHighlightBoxGradientEndColor[#f5f5f5 100%]);
+ background-position: $BodyHighlightBoxBGPosition[top left];
+ background-repeat: $BodyHighlightBoxBGRepeat[no-repeat];
+ box-shadow: $BodyHighlightBoxOuterXaxis[3px] $BodyHighlightBoxOuterYaxis[3px] $BodyHighlightBoxOuterBlur[0] $BodyHighlightBoxOuterSpread[0px] $BodyHighlightBoxOuterShadowColor[#f9f9f9], $BodyHighlightBoxInnerXaxis[0px] $BodyHighlightBoxInnerYaxis[0px] $BodyHighlightBoxInnerBlur[0px] $BodyHighlightBoxInnerSpread[0] $BodyHighlightBoxInnerShadowColor[transparent] inset;
+ -moz-box-shadow: $BodyHighlightBoxOuterXaxis[3px] $BodyHighlightBoxOuterYaxis[3px] $BodyHighlightBoxOuterBlur[0] $BodyHighlightBoxOuterSpread[0px] $BodyHighlightBoxOuterShadowColor[#f9f9f9], $BodyHighlightBoxInnerXaxis[0px] $BodyHighlightBoxInnerYaxis[0px] $BodyHighlightBoxInnerBlur[0px] $BodyHighlightBoxInnerSpread[0] $BodyHighlightBoxInnerShadowColor[transparent] inset;
+ -webkit-box-shadow: $BodyHighlightBoxOuterXaxis[3px] $BodyHighlightBoxOuterYaxis[3px] $BodyHighlightBoxOuterBlur[0] $BodyHighlightBoxOuterSpread[0px] $BodyHighlightBoxOuterShadowColor[#f9f9f9], $BodyHighlightBoxInnerXaxis[0px] $BodyHighlightBoxInnerYaxis[0px] $BodyHighlightBoxInnerBlur[0px] $BodyHighlightBoxInnerSpread[0] $BodyHighlightBoxInnerShadowColor[transparent] inset;
+ -o-box-shadow: $BodyHighlightBoxOuterXaxis[3px] $BodyHighlightBoxOuterYaxis[3px] $BodyHighlightBoxOuterBlur[0] $BodyHighlightBoxOuterSpread[0px] $BodyHighlightBoxOuterShadowColor[#f9f9f9], $BodyHighlightBoxInnerXaxis[0px] $BodyHighlightBoxInnerYaxis[0px] $BodyHighlightBoxInnerBlur[0px] $BodyHighlightBoxInnerSpread[0] $BodyHighlightBoxInnerShadowColor[transparent] inset;
+ border-width: $BodyHighlightBoxBorderWidth[1px];
+ border-style:$BodyHighlightBoxBorderStyle[solid];
+ border-color:$BodyHighlightBoxBorderColor[#e2e2e2];
+ border-radius: $BodyHighlightBoxBorderRadius[0];
+ -moz-border-radius:$BodyHighlightBoxBorderRadius[0];
+ -webkit-border-radius:$BodyHighlightBoxBorderRadius[0];
+ -o-border-radius:$BodyHighlightBoxBorderRadius[0];
+ padding: $BodyHighlightBoxInnerSpace[10px];
+ margin: $BodyHighlightBoxOuterSpace[4px];
+    min-height: 200px;
+font-family:$BodyHighlightBoxFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$BodyHighlightBoxFontSize[12px];
+ color:$BodyHighlightBoxTextColor[#5c5c5c];
+}
+.zs-highlight-box h1, .zs-highlight-box h2, .zs-highlight-box h3, .zs-highlight-box h4, .zs-highlight-box h5, .zs-highlight-box h6 {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+.zs-highlight-box h1 {
+font-family:$BodyHighlightBoxH1FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyHighlightBoxH1FontSize[24px];
+color:$BodyHighlightBoxH1TextColor[#333432];
+}
+.zs-highlight-box h2 {
+font-family:$BodyHighlightBoxH2FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyHighlightBoxH2FontSize[22px];
+color:$BodyHighlightBoxH2TextColor[#333432];
+}
+.zs-highlight-box h3 {
+font-family:$BodyHighlightBoxH3FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyHighlightBoxH3FontSize[20px];
+color:$BodyHighlightBoxH3TextColor[#333432];
+}
+.zs-highlight-box h4 {
+font-family:$BodyHighlightBoxH4FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyHighlightBoxH4FontSize[18px];
+color:$BodyHighlightBoxH4TextColor[#333432];
+}
+.zs-highlight-box h5 {
+font-family:$BodyHighlightBoxH5FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyHighlightBoxH5FontSize[16px];
+color:$BodyHighlightBoxH5TextColor[#333432];
+}
+.zs-highlight-box h6 {
+font-family:$BodyHighlightBoxH6FontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size:$BodyHighlightBoxH6FontSize[14px];
+color:$BodyHighlightBoxH6TextColor[#333432];
+}
+.zs-highlight-box a {
+color:$BodyHighlightBoxAColor[#79b400];
+text-decoration:$BodyHighlightBoxATextDecoration[none];
+}
+.zs-highlight-box a:hover {
+text-decoration:$BodyHighlightBoxAHoverTextDecoration[none];
+color:$BodyHighlightBoxAHoverColor[#79b400];
+}
+.zs-highlight-box th {
+ font-family:$BodyHighlightBoxTHFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$BodyHighlightBoxTHFontSize[12px];
+ background:$BodyHighlightBoxTHBGColor[#f0f0f0];
+ border-width:$BodyHighlightBoxTHBorderWidth[1px];
+ border-style:$BodyHighlightBoxTHBorderStyle[solid];
+ border-color:$BodyHighlightBoxTHBorderColor[#dbdbdb];
+ color:$BodyHighlightBoxTHTextColor[#5c5c5c];
+ padding:$BodyHighlightBoxTHCellSpaceing[6px];
+}
+.zs-highlight-box td {
+ font-family:$BodyHighlightBoxTDFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+ font-size:$BodyHighlightBoxTDFontSize[12px];
+ background:$BodyHighlightBoxTDBGColor[#f8f8f8];
+ border-width:$BodyHighlightBoxTDBorderWidth[1px];
+ border-style:$BodyHighlightBoxTDBorderStyle[solid];
+ border-color:$BodyHighlightBoxTDBorderColor[#dbdbdb];
+ color:$BodyHighlightBoxTDTextColor[#5c5c5c];
+ padding:$BodyHighlightBoxTDCellSpaceing[6px];
+}
+/*----------------------------------- TEXT HIGHLIGHT CSS  -----------------------------------------------*/
+.zs-text-light-color {
+color:$BodyTextLightColor[#BBBBBB];
+}
+.zs-text-highlight-color {
+color:$BodyTextHighlightColor[#333432];
+}
+.zs-highlight-box .zs-text-light-color {
+color:$BodyHighlightBoxTextLightColor[#BBBBBB];
+}
+.zs-highlight-box .zs-text-highlight-color {
+color:$BodyHighlightBoxTextHighlightColor[#333432];
+}
+/*---------------------------------- THEME TABS ACCORDION AREA CSS START ------------------------------------*/
+.zs-tabs ul, .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.zs-tabs ul li, .zs-highlight-box .zs-tabs ul li {
+    float: left;
+    margin: 0px 2px 0px 0;
+    padding: 0;
+}
+.zs-tabs ul li div, .zs-highlight-box .zs-tabs ul li div {
+    cursor: pointer;
+    position: relative;
+    padding: 0 20px;
+    color: #5c5c5c;
+    margin: 0 0 -1px;
+    line-height: 2.8;
+    background: #eeeeee;
+    border-top: 2px solid transparent;
+    border-bottom: 1px solid #e8e8e8;
+}
+.zs-tabs ul li.selected div, .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #ffffff;
+    border-top: 3px solid #79b400;
+    padding-top: 0;
+    color: #79b400;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 0;
+}
+.zs-tabs-accordion-content, .zs-highlight-box .zs-tabs-accordion-content {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    display: none;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+    clear: both;
+    border-top: 0;
+    margin-bottom: 5px;
+    color: #5c5c5c;
+}
+.zs-accordion, .zs-highlight-box .zs-accordion {
+    color: #595959;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: none;
+    background: #eeeeee;
+    border: 1px solid #e8e8e8;
+}
+.zs-accordion.selected, .zs-highlight-box .zs-accordion.selected {
+    background: #79b400;
+    color: #ffffff;
+    margin-bottom: 0px;
+    border-color: #79b400;
+}
+/*---------------------------------- THEME HIGHLIGHT BOX TABS ACCORDION AREA CSS START ------------------------------------*/
+.zs-highlight-box .zs-tabs-accordion-content h1, .zs-highlight-box .zs-tabs-accordion-content h2, .zs-highlight-box .zs-tabs-accordion-content h3, .zs-highlight-box .zs-tabs-accordion-content h4, .zs-highlight-box .zs-tabs-accordion-content h5, .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #333432;
+}
+.zs-highlight-box .zs-tabs-accordion-content a, .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #79b400;
+}
+.zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #ced0cc;
+}
+.zs-highlight-box .zs-tabs-accordion-content th {
+    background: #f0f0f0;
+    border-color: #dbdbdb;
+    color: #5c5c5c;
+}
+.zs-highlight-box .zs-tabs-accordion-content td {
+    background: #f8f8f8;
+    border-color: #dbdbdb;
+    color: #5c5c5c;
+}
+/***************************** START SOCIAL ICONS SPRITE *****************************/
+.socialiconContainer {
+    margin: 5px 0;
+    text-align: right;
+}
+.zs-socialicon-email, .zs-socialicon-facebook, .zs-socialicon-flickr, .zs-socialicon-googleplus, .zs-socialicon-linkedin, .zs-socialicon-pinterest, .zs-socialicon-rss, .zs-socialicon-twitter, .zs-socialicon-youtube, .zs-socialicon-medium, .zs-socialicon-instagram {
+    background: url('images/zs-socialicon-sprite.png') no-repeat top left;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 4px;
+}
+.zs-socialicon-email {
+    background-position: 0 -0px;
+}
+.zs-socialicon-facebook {
+    background-position: 0 -16px;
+}
+.zs-socialicon-flickr {
+    background-position: 0 -32px;
+}
+.zs-socialicon-googleplus {
+    background-position: 0 -48px;
+}
+.zs-socialicon-linkedin {
+    background-position: 0 -64px;
+}
+.zs-socialicon-pinterest {
+    background-position: 0 -80px;
+}
+.zs-socialicon-rss {
+    background-position: 0 -96px;
+}
+.zs-socialicon-twitter {
+    background-position: 0 -112px;
+}
+.zs-socialicon-youtube {
+    background-position: 0 -128px;
+}
+.zs-socialicon-medium {
+    background-position: 0 -144px;
+}
+.zs-socialicon-instagram {
+    background-position: 0 -160px;
+}
+/*****************************   END: SOCIAL ICONS SPRITE *****************************/
+/*----------------------------------- THEME NEWSLETTER CSS -----------------------------------------------*/
+.newsletter-container {
+background: $NewsletterBGColor[transparent];
+    padding: 10px
+}
+h3.newsletter-heading {
+    margin-bottom: 10px;
+font-family: $NewsletterHeadingFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size: $NewsletterHeadingFontSize[20px];
+color: $NewsletterHeadingColor[#333432];
+    border-bottom: 0px;
+}
+.newsletter-desc {
+    margin-bottom: 20px;
+font-family: $NewsletterDescFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size: $NewsletterDescFontSize[12px];
+color: $NewsletterDescColor[#5C5C5C];
+}
+.newsletter-input-field {
+background: $NewsletterInputBGColor[#ffffff];
+border-width: $NewsletterInputBorderWidth[1px];
+border-color: $NewsletterInputBorderColor[#E0E0E0];
+color:$NewsletterInputColor[#5C5C5C];
+font-family: $NewsletterInputFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size: $NewsletterInputFontSize[12px];
+    border-style: solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align:top;
+}
+button.newsletter-button {
+background: $NewsletterButtonBGColor[#79b400];
+border-width: $NewsletterButtonBorderWidth[0];
+border-color: $NewsletterButtonBorderColor[transparent];
+color:$NewsletterButtonColor[#ffffff];
+font-family: $NewsletterButtonFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+font-size: $NewsletterButtonFontSize[12px];
+    border-style: solid;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+.newsletter-layout-1 .newsletter-form, .newsletter-layout-2 .newsletter-form {
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter-layout-3 .newsletter-form {
+    width: 200px;
+    margin: 0 auto;
+    text-align: right;
+}
+.newsletter-layout-3 button {
+    text-align: right;
+}
+.newsletter-form input[type="text"]::-moz-placeholder {
+    color:#747474;
+  font-size:90%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#747474;
+  font-size:85%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#747474;
+  font-size:90%;
+  line-height:normal;
+}
+/*----------------------------------- MEMBERSHIP PORTAL AREA CSS  -----------------------------------------------*/
+.mp-container {
+    height: 30px;
+    float: right;
+    position: relative;
+    top: -2px;
+    padding-left: 15px;
+}
+.member-signin {
+    float: right;
+}
+.member-signin > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.member-signin li {
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 20px;
+    padding: 0;
+    position:relative;
+}
+.member-signin li a {
+    font-family:$BodyFontFamily["B Yekan", Arial, Helvetica, sans-serif];
+    font-size:$BodyFontSize[12px];
+    text-decoration:$MpATextDecoration[none];
+    color:$MpAColor[#79b400];
+    display:block;
+}
+.member-signin li a:hover {
+    text-decoration:$MpAHoverTextDecoration[none];
+    color:$MpAHoverColor[#79b400];
+}
+.member-signin li:first-child {
+    margin-left: 0;
+}
+.member-signin li:last-child:before {
+    color:$MpAColor[#79b400];
+    content: "|";
+    position: absolute;
+    top: 0;
+    left:-10px;
+}

@@ -1,0 +1,106 @@
+.modal-backdrop {
+  position: absolute;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  transition: all 0.4s;
+  transition-delay: 0.2s;
+}
+.modal-backdrop.modal-visible {
+  opacity: 0.6;
+  visibility: visible;
+  filter: alpha(opacity=60);
+  transition-delay: 0s;
+}
+/*
+ * ! MUST NOT BE MODIFIED !
+ * used for centering
+ */
+.modal-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  visibility: hidden;
+}
+/*
+.modal-wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+*/
+.modal-wrapper.modal-visible {
+  visibility: visible;
+}
+/*
+ * MODAL STYLING
+ * can be customised
+ */
+.modal-container {
+    position: relative;
+    z-index: 1110;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    text-align: left;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.4s;
+    transition-delay: 0s;
+    overflow: auto;
+    max-height: 100%;
+}
+.modal-container .close{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background: red;
+}
+.modal-container.modal-visible {
+  visibility: visible;
+  transition-delay: 0.2s;
+}
+/*
+ * MODAL ANIMATIONS
+ * available Modal animations
+ * feel free to append your own
+ */
+/* fade */
+.modal-fade {
+  opacity: 0;
+}
+.modal-fade.modal-visible {
+  opacity: 1;
+}
+/* slide */
+.modal-slide {
+  opacity: 0;
+  transform: translateY(-1000px);
+}
+.modal-slide.modal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* zoom */
+.modal-zoom {
+  opacity: 0;
+  transform: scale(0);
+}
+.modal-zoom.modal-visible {
+  opacity: 1;
+  transform: scale(1);
+}

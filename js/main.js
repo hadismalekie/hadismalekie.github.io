@@ -90,7 +90,7 @@
 
     //typed js
     $(".typed").typed({
-        strings: ["خوش آمدید", "حدیث ملکی هستم","با هنرِ دیجیتال همراه شما هستم"],
+        strings: ["انیمیشن داستانی","عکاسی قصه گو","مصورسازی اطلاعات" ],
         typeSpeed: 110,
         backDelay: 900,
         // loop
@@ -98,7 +98,7 @@
     });
 	
 	$(".typeden").typed({
-        strings: ["I'm Hadis Malekie","Visual Storyteller", "Animation Director","Photgrapher", "and Data Visualizer"],
+        strings: ["Storytelling Animation", "Creative Photography",  "Information Design"],
         typeSpeed: 140,
         backDelay: 400,
         // loop

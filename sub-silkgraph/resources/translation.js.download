@@ -1,0 +1,21 @@
+function t(message, data) {
+    var tValue = window.globalLanguage[message] || message;
+    if (window.lang == 'en') {
+        tValue = message;
+    }
+    if (data) {
+        for (key in data)  {
+            tValue = tValue.replace(new RegExp('\\{:' + key + '\\}', 'gm'), data[key]);
+        }
+    }
+    return tValue;
+}
+
+function localeURL(url) {
+	return url;
+    if (url == null) {
+        return false;
+    }
+    url = url.substring(0,1) != '/' ? '/' + url : url;
+    return '/' + window.lang + url;
+}

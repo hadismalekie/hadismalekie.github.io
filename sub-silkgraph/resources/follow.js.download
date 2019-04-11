@@ -1,0 +1,107 @@
+$(function() {
+    $(document).on('click', '.followingBtn', function() {
+		var flwbtn = $(this);
+        if(flwbtn.hasClass('pending') || flwbtn.hasClass('followed')){
+            if(!confirm(t('Are you sure?')))
+                return;
+        }
+		friendship(flwbtn, {
+			success : function(response, action) {
+				var followCounter = $('.counter');
+				var step = 0;
+                var pending =false;
+                if (flwbtn.hasClass("pending")) {
+                    var pending = true;
+                }
+				flwbtn.removeClass('notFollowed pending followed');
+				if (action == 'cancel') {
+					flwbtn.addClass('notFollowed');
+					flwbtn.html('<span class="icon icon-rss"></span> ' + t('Follow'));
+                    if (pending)
+                        step = 0;
+                    else
+                        step = -1;
+				} else {
+					if (response.code == 202) {
+						flwbtn.addClass('pending');
+						flwbtn.html('منتظر تایید درخواست');
+					} else {
+						flwbtn.addClass('followed');
+						flwbtn.html('<span class="icon icon-tick"></span> ' + t('Following'));
+						step = 1;
+					}
+				}
+				if (followCounter.text().length > 0) {
+					followCounter.text(parseInt(followCounter.text()) + step);
+				}
+			},
+			error : function(error) {
+				if (error.status == 401) {
+					document.location = '/users/signin';
+				} else {
+					showNotification({
+						message: t('Operation failed')
+					});
+				}
+			}
+		});
+	});
+
+    $(document).on('click', '.follow_btn', function() {
+        var flwbtn = $(this);
+        if(flwbtn.hasClass('pending') || flwbtn.hasClass('followed')){
+            if(!confirm(t('Are you sure?')))
+                return;
+        }
+        friendship(flwbtn, {
+            success : function(response, action) {
+                flwbtn.removeClass('notFollowed pending followed');
+                if (action == 'cancel') {
+                    flwbtn.addClass('notFollowed');
+                    flwbtn.html('<span class="icon icon-rss"></span>' + t('Follow'));
+                } else {
+                    if (response.code == 202) {
+                        flwbtn.addClass('pending');
+                        flwbtn.html(t('Awaiting approval'));
+                    } else {
+                        flwbtn.addClass('followed');
+                        flwbtn.html('<span class="icon icon-tick"></span>' + t('Following'));
+                    }
+                }
+            },
+            error : function(error) {
+                if (error.status == 401) {
+                    document.location = '/users/signin';
+                } else {
+                    showNotification({
+                        message: t('Operation failed')
+                    });
+                }
+            }
+        });
+    });
+
+    $(document).on('click', '.follow_delete_btn', function() {
+        var _this = this;
+        if(!confirm(t('Are you sure?'))) {
+            return;
+        }
+        $.ajax({
+            url : '/api/followers/delete.json',
+            type : 'POST',
+            data : {
+                channel_id : $(this).attr('channel-id')
+            },
+            success : function(response) {
+            setTimeout(function() {
+                    $(_this).closest('.itemUser').remove();
+                }, 100);
+            },
+            error : function(error) {
+                showNotification({
+                    message: t('Operation failed')
+                });
+            }
+        });
+    });
+});

@@ -953,12 +953,12 @@ ul.portfolio-image li .desc{
 }
 .wrap-about .w-content{
   position: absolute;
-  left: 50%;
+  left: 20%;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%); 
+  transform: translateX(-20%) translateY(-50%);
+  -webkit-transform: translateX(-20%) translateY(-50%);
+  -moz-transform: translateX(-20%) translateY(-50%);
+  -ms-transform: translateX(-20%); 
 }
 
 .wrap-about .w-content td{
