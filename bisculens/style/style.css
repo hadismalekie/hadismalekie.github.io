@@ -1,0 +1,1691 @@
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+body {
+ background-image:url(../../sub-bisculens/images/bodybg.png);
+ background-position:top left;
+ background-repeat:repeat;
+ background-color: transparent;
+ background-attachment:scroll;
+ background-size:auto;
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ color:#747474;
+ direction:"rtl";
+}
+h1 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:30px;
+color:#8c4601;
+}
+h2 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:28px;
+color:#8c4601;
+}
+h3 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:26px;
+color:#8c4601;
+}
+h4 {
+font-family:Georgia, ""B Yekan", Times, serif;
+font-size:24px;
+color:#8c4601;
+}
+h5 {
+font-family:Georgia, ""B Yekan", Times, serif;
+font-size:22px;
+color:#8c4601;
+}
+h6 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:20px;
+color:#8c4601;
+}
+a {
+ text-decoration:none;
+color:#8c4601;
+}
+a:hover {
+text-decoration:none;
+color:#8c4601;
+}
+h1, h2, h3, h4, h5, h6 {
+    border-bottom: 1px solid #ededed;
+    padding: 0 0 5px;
+}
+a img {
+    border: 0 solid;
+}
+:focus {
+    outline: none;
+}
+p {
+    line-height: 1.5;
+}
+ul, ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style-image: none;
+}
+ol {
+    list-style: decimal;
+    padding: 0 0 0 23px;
+    list-style-image: none;
+}
+li {
+    margin: 0;
+    padding: 0 0 15px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:#FFF6E4;
+ border-width:1px;
+ border-style:solid;
+ border-color:#F8ECD4;
+ color:#8C4601;
+ padding:6px;
+}
+td {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#F8ECD4;
+ color:#747474;
+ padding:6px;
+}
+hr {
+    border-top: 1px solid #ededed
+}
+/*--------------------------------------------------------------- REUSABLE CSS -------------------------------------------------------------------*/
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clearDiv {
+    clear: both;
+}
+.page-width {
+    width: 920px;
+    margin: 0 auto;
+}
+.patternBG {
+ background-image:url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/pattern.png);
+ background-position:top center;
+ background-repeat:no-repeat;
+ background-color: transparent;
+ background-attachment:scroll;
+ background-size:auto;
+}
+.bottomShadow {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/shadow.png) left bottom repeat-x;
+}
+/*--------------------------------------------------------------- TOP AREA CSS -------------------------------------------------------------------*/
+.topArea {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/topshadow.png) top center no-repeat;
+}
+.sitenamelogoContainer {
+    padding: 30px 0 10px;
+    text-align: center;
+}
+.logoArea {
+    margin-bottom: 10px;
+}
+.sitenameArea h1 {
+ font-size:36px;
+ color:#ffd271;
+ font-family: Georgia, "B Yekan", Times, serif;
+    text-shadow: 4px 0 1px #663300;
+    -webkit-text-shadow: 4px 0 1px #663300;
+    -moz-text-shadow: 4px 0 1px #663300;
+    -o-text-shadow: 4px 0 1px #663300;
+    word-wrap: break-word;
+    border: 0;
+}
+.sitenameArea h5 {
+ font-size:18px;
+ color:#eee8d4;
+ font-family: Georgia, "B Yekan", Times, serif;
+    word-wrap: break-word;
+    border: 0;
+}
+/*--------------------------------------------------------------- MENU AREA CSS -------------------------------------------------------------------*/
+.menuArea {
+    height: 48px;
+    overflow: hidden;
+ background-image:url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/menubg.png);
+background-repeat:repeat-x;
+background-position:left top;
+ background-color:transparent;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+.navCont {
+    float: left;
+    width: 75%;
+}
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+#navigation li {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+#navigation li a {
+    width: 100%;
+ color:#ffa056;
+ font-family: Georgia, "B Yekan", Times, serif;
+    float: left;
+    line-height: 4;
+    text-decoration: none;
+    text-transform: uppercase;
+ font-size:12px;
+    text-shadow: 2px 0 0 #7e3c00;
+    -moz-text-shadow: 2px 0 0 #7e3c00;
+    -webkit-text-shadow: 2px 0 0 #7e3c00;
+    -o-text-shadow: 2px 0 0 #7e3c00;
+    padding: 0 35px;
+}
+#navigation li:last-child.selected {
+    border-right: 0;
+}
+#navigation li:first-child {
+    -webkit-border-radius: 10px 0px 0 0;
+    -o-border-radius: 10px 0px 0 0;
+    border-radius: 10px 0px 0 0;
+}
+#navigation li:first-child.selected {
+    border-left: 0;
+}
+#navigation li.selected {
+
+background-repeat:repeat-x;
+background-position:right top;
+ background-color:#F1CEB6;
+}
+#navigation li.selected {
+    border: 1px solid #7d0700;
+}
+#navigation li.selected a span, #navigation li.selected:hover a span, #navigation li.selected .active:hover a span {
+ color:#000000;
+    text-shadow: none;
+}
+#navigation li:hover a span {
+    color: #fff;
+}
+#navigation li.active a span {
+    color: #fff;
+}
+#navigation li.selected.active a span {
+    color: #000;
+}
+#navigation li a span {
+    float: left;
+}
+#navigation li.navArrow a em, #navigation li:hover.navArrow a em, #navigation li.selected.navArrow a em, #navigation li.active.navArrow a em {
+    background: transparent url(../../sub-bisculens/images/NavArrow.png) no-repeat scroll 0 0;
+    display: block;
+    float: left;
+    height: 8px;
+    width: 9px;
+    margin: 20px 0 0 15px;
+}
+#navigation li:hover.navArrow a em, #navigation li.active.navArrow a em {
+    background: transparent url(../../sub-bisculens/images/NavArrow.png) no-repeat scroll 0 0;
+}
+#navigation li.selected.navArrow a em {
+    background: transparent url(../../sub-bisculens/images/NavArrow.png) no-repeat scroll 0 0;
+}
+#navigation li.selected.active.navArrow a em {
+    background: transparent url(../../sub-bisculens/images/NavArrow.png) no-repeat scroll 0 0;
+}
+
+#nav-top{
+	background-color:#9B5511;
+}
+
+#nav-top.selected {
+    color: #fff;
+}
+
+/*--------------------------------------------------------------- SUBMENU AREA CSS -------------------------------------------------------------------*/
+.submenu {
+ background-color:#fff6e4;
+background-image:none;
+background-position:top left;
+background-repeat:repeat;
+ border-width:1px;
+border-style:solid;
+border-color:#984900;
+ border-radius:0px;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+-o-border-radius:0px;
+ font-family:Georgia, "B Yekan", Times, serif;
+    width: 200px;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    -webkit-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    -moz-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    -o-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    -ms-transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+.submenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    line-height: 0;
+}
+.submenu li {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.submenu li a {
+ color:#8c4601;
+ font-size:12px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    float: left;
+    padding: 7px 0;
+    cursor: pointer;
+}
+.submenu li a:hover {
+ color:#ffffff;
+background-color:#c97300;
+background-image:none;
+background-position:top left;
+background-repeat:repeat;
+}
+.submenu li a span {
+    width: 85%;
+    float: left;
+    padding-left: 15px;
+    word-wrap: break-word;
+}
+.submenu li a em {
+    width: 10px;
+    float: left;
+    height: 16px;
+}
+.submenu li.navArrow a em {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/subnavArrow1.png) left top no-repeat;
+    float: left;
+    height: 16px;
+    width: 10px;
+    margin-top: 6px;
+}
+.submenu li:hover.navArrow a em {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/subnavArrow.png) left top no-repeat;
+}
+/*--------------------------------------------------------------- CONTENT AREA CSS -------------------------------------------------------------------*/
+.bannerArea {
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.container {
+ background-color:#ffffff;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -webkit-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -moz-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -o-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ border-width: 0;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0 0 10px 10px;
+ -moz-border-radius:0 0 10px 10px;
+ -webkit-border-radius:0 0 10px 10px;
+ -o-border-radius:0 0 10px 10px;
+    padding: 30px;
+    overflow: hidden;
+}
+.contentArea {
+    width: 65%;
+}
+.contentAreaSpace {
+    min-height: 400px;
+    height: auto !important;
+    height: 400px;
+}
+/*--------------------------------------------------------------- SIDEBAR AREA CSS -------------------------------------------------------------------*/
+.sidebarArea {
+    width: 35%;
+}
+.sidebarAreaInner {
+ background-color:#fff6e4;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -o-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ border-width: 1px;
+ border-style:solid;
+ border-color:#e7d5b2;
+ border-radius: 15px;
+ -moz-border-radius:15px;
+ -webkit-border-radius:15px;
+ -o-border-radius:15px;
+    padding: 20px;
+    margin-left: 30px;
+ font-size:12px;
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ color:#747474;
+}
+.sidebarAreaSpace {
+    min-height: 300px;
+    height: auto !important;
+    height: 300px;
+}
+.sidebarAreaInner h1, .sidebarAreaInner h2, .sidebarAreaInner h3, .sidebarAreaInner h4, .sidebarAreaInner h5, .sidebarAreaInner h6 {
+    border-bottom: 1px solid #464646;
+}
+.sidebarAreaInner h1 {
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ font-size:30px;
+ color:#8C4601;
+}
+.sidebarAreaInner h2 {
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ font-size:28px;
+ color:#8C4601;
+}
+.sidebarAreaInner h3 {
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ font-size:26px;
+ color:#8C4601;
+}
+.sidebarAreaInner h4 {
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#8C4601;
+}
+.sidebarAreaInner h5 {
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ font-size:22px;
+ color:#8C4601;
+}
+.sidebarAreaInner h6 {
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#8C4601;
+}
+.sidebarAreaInner a {
+ text-decoration:none;
+ color:#8C4601;
+}
+.sidebarAreaInner a:hover {
+ text-decoration:none;
+ color:#8C4601;
+}
+.sidebarAreaInner form li span input[type=text], .sidebarAreaInner form li span textarea, .sidebarAreaInner form li span select {
+ font-family:"B Yekan",Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#747474;
+    width: 180px;
+}
+.sidebarAreaInner form li span select {
+    width: 193px;
+}
+.sidebarAreaInner form li input[type=submit], .sidebarAreaInner form li input[type=reset] {
+font-family:Arial, Helvetica, sans-serif
+}
+.sidebarArea th {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:#ffffff;
+ border-width:1px;
+ border-style:solid;
+ border-color:#F5E3BF;
+ color:#8C4601;
+ padding:6px;
+}
+.sidebarArea td {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#F5E3BF;
+ color:#747474;
+ padding:6px;
+}
+.sidebarArea form ul li label, .sidebarArea form ul li div {
+    float: none;
+    width: auto;
+    padding: 5px 0;
+}
+.sidebarAreaInner form ul li label {
+    text-align: left;
+}
+.sidebarAreaInner hr {
+    border-top: 1px solid #464646
+}
+.bredcrumb {
+    padding: 0 0 20px;
+}
+.bredcrumb span {
+    padding: 0 10px;
+}
+.bredcrumb p {
+    word-wrap: break-word;
+}
+.sidebarAreaInner .zs-highlight-box {
+ background-color: #803d00;
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png) , -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png) , -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png) , -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: repeat;
+ box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ border-width: 1px;
+ border-style:solid;
+ border-color:#4e140f;
+ border-radius: 5px;
+ -moz-border-radius:5px;
+ -webkit-border-radius:5px;
+ -o-border-radius:5px;
+ padding: 10px;
+ margin: 0;
+    min-height: 200px;
+font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ color:#C47834;
+}
+.sidebarAreaInner .zs-highlight-box h1 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:30px;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box h2 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:28px;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box h3 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:26px;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box h4 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:24px;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box h5 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:22px;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box h6 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:20px;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box a {
+ text-decoration:none;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box a:hover {
+text-decoration:none;
+color:#ffd271;
+}
+.sidebarAreaInner .zs-highlight-box form li span input[type=text], .sidebarAreaInner .zs-highlight-box form li span textarea, .sidebarAreaInner .zs-highlight-box form li span select {
+    width: 155px;
+}
+.sidebarAreaInner .zs-highlight-box form li span select {
+    width: 168px;
+}
+.sidebarAreaInner .zs-highlight-box .newsletter-input-field, .sidebarAreaInner .zs-tabs-accordion-content .newsletter-input-field {
+    width:175px;
+}
+.sidebarAreaInner .zs-highlight-box .newsletter-layout-3 .newsletter-form, .sidebarAreaInner .zs-tabs-accordion-content .newsletter-layout-3 .newsletter-form {
+    width: 175px;
+}
+.sidebarAreaInner .zs-highlight-box th {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:#AA5508;
+ border-width:1px;
+ border-style:solid;
+ border-color:#AF5E14;
+ color:#E9B482;
+ padding:6px;
+}
+.sidebarAreaInner .zs-highlight-box td {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#AF5E14;
+ color:#C47834;
+ padding:6px;
+}
+/*-----------------------------------    TEXT HIGHLIGHT CSS    -----------------------------------------------*/
+.sidebarAreaInner .zs-text-light-color {
+color:#C5A6A6
+}
+.sidebarAreaInner .zs-text-highlight-color {
+color:#8C4601
+}
+.sidebarAreaInner .zs-highlight-box .zs-text-light-color {
+color:#C5A6A6
+}
+.sidebarAreaInner .zs-highlight-box .zs-text-highlight-color {
+color:#ffd271
+}
+/*--------------------- THEME SIDEBAR TABS ACCORDION AREA CSS ---------------------*/
+.sidebarAreaInner .zs-tabs ul, .sidebarAreaInner .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    display: none;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #E7D5B2;
+    border-left: 1px solid #E7D5B2;
+}
+.sidebarAreaInner .zs-tabs ul li, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li {
+    margin: 0px;
+    float: left;
+    padding: 0px;
+}
+.sidebarAreaInner .zs-tabs ul li div, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li div {
+    background: #FAECD0;
+    padding: 0 25px;
+    color: #918a7b;
+    position: relative;
+    margin: 0 0 -1px;
+    line-height: 3;
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #E7D5B2;
+    border-top: 1px solid #E7D5B2;
+    border-bottom: 1px solid #E7D5B2;
+}
+.sidebarAreaInner .zs-tabs ul li:hover div, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li:hover div {
+    background: #8c4601;
+    color: #ffffff;
+}
+.sidebarAreaInner .zs-tabs ul li.selected div, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #FFFBF4;
+    color: #8c4601;
+    border-bottom: 1px solid #FFFBF4;
+}
+.sidebarAreaInner .zs-tabs-accordion-content, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content {
+    clear: both;
+    border: 1px solid #E7D5B2;
+    padding: 15px;
+    display: block;
+    color: #747474;
+    margin: 0;
+    background: #FFFBF4;
+    margin-bottom: 3px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.sidebarAreaInner .zs-accordion, .sidebarAreaInner .zs-highlight-box .zs-accordion {
+    background: #FAECD0;
+    color: #918a7b;
+    padding: 12px 10px;
+    cursor: pointer;
+    border: 1px solid #E7D5B2;
+    margin-bottom: 2px;
+    display: block;
+}
+.sidebarAreaInner .zs-accordion.selected, .sidebarAreaInner .zs-highlight-box .zs-accordion.selected {
+    background: #8D4A0D;
+    color: #FFFFFF;
+    border: 0px;
+    margin-bottom: 0;
+}
+/*---------------------------------- THEME HIGHLIGHT BOX TABS ACCORDION AREA CSS START ------------------------------------*/
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content {
+    padding: 10px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-accordion.selected {
+    background: #eb9625;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h1, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h2, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h3, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h4, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h5, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #8c4601;
+    text-shadow: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -o-text-shadow: none;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content a, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #8c4601;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #464646;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #ffffff;
+    border-color: #f5e3bf;
+    color: #8c4601;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content td {
+    background: transparent;
+    border-color: #f5e3bf;
+    color: #747474;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    background: #ffffff;
+    border: 1px solid #f8e5bf;
+    color: #747474;
+    width: 115px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    width: 128px;
+}
+/*--------------------------------------------------------------- FOOTER AREA CSS -------------------------------------------------------------------*/
+.footer {
+    padding: 0 0 30px;
+}
+.footerInner {
+ background-color:transparent;
+ background-image:url(../images/biscufarsiii.png);
+ background-position:top center;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:contain;
+ box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ border-width:0 0 1px;
+ border-style:solid;
+ border-color:#683300;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ color:#C27B17;
+ font-family: Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+    padding: 50px 20px 20px;
+}
+.footerInner h1 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:28px;
+ color:#FFD271;
+}
+.footerInner h2 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:24px;
+ color:#FFD271;
+}
+.footerInner h3 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:20px;
+ color:#FFD271;
+}
+.footerInner h4 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:18px;
+ color:#FFD271;
+}
+.footerInner h5 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:16px;
+ color:#FFD271;
+}
+.footerInner h6 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:14px;
+ color:#FFD271;
+}
+.footerInner a {
+ text-decoration:none;
+ color:#FFD271;
+}
+.footerInner a:hover {
+ text-decoration:none;
+ color:#FFD271;
+}
+.footerInner form li span input[type=text], .footerInner form li span textarea, .footerInner form li span select {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ color:#C27B17;
+    background: #773908;
+    border-color: #8D4811;
+}
+.footerInner form li input[type=submit], .footerInner form li input[type=reset] {
+font-family:Georgia, "B Yekan", Times, serif;
+}
+.footerInner hr {
+    border-top: 1px solid #AF6721;
+}
+.footerInner h3.newsletter-heading {
+    color:#FFD271;
+}
+.footerInner .newsletter-desc {
+    color:#C27B17;
+}
+.footerInner .newsletter-input-field {
+    background: #773908;
+    border-color: #8D4811;
+    color: #C27B17;
+}
+.footerInner .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#C27B17;
+}
+.footerInner .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#C27B17;
+}
+.footerInner .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#C27B17;
+}
+.footerInner th {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:#AA5508;
+ border-width:1px;
+ border-style:solid;
+ border-color:#AF5E14;
+ color:#E9B482;
+ padding:6px;
+}
+.footerInner td {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#AF5E14;
+ color:#C27B17;
+ padding:6px;
+}
+.footerInner h1, .footerInner h2, .footerInner h3, .footerInner h4, .footerInner h5, .footerInner h6 {
+    border-bottom: 1px solid #8C3C00;
+}
+.footerInner .zs-highlight-box {
+ background-color: #b67416;
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/footerhighlightboxbg.png);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/footerhighlightboxbg.png) , -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/footerhighlightboxbg.png) , -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/footerhighlightboxbg.png) , -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: repeat;
+ box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a15f01 inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a15f01 inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a15f01 inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a15f01 inset;
+ border-width: 1px;
+ border-style:solid;
+ border-color:#4e140f;
+ border-radius: 5px;
+ -moz-border-radius:5px;
+ -webkit-border-radius:5px;
+ -o-border-radius:5px;
+ padding: 10px;
+ margin: 0;
+    min-height: 200px;
+color:#C27B17;
+ font-family: Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+}
+.footerInner .zs-highlight-box h1 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:28px;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box h2 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:24px;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box h3 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:20px;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box h4 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:18px;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box h5 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:16px;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box h6 {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:14px;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box a {
+ text-decoration:none;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box a:hover {
+ text-decoration:none;
+ color:#ffd271;
+}
+.footerInner .zs-highlight-box th {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:#b67416;
+ border-width:1px;
+ border-style:solid;
+ border-color:#BE7F25;
+ color:#F7C089;
+ padding:6px;
+}
+.footerInner .zs-highlight-box td {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#BE7F25;
+ color:#C27B17;
+ padding:6px;
+}
+.footerInner .zs-highlight-box hr {
+    border-color: #b67416;
+}
+.footerInner .zs-highlight-box form li span input[type=text], .footerInner .zs-highlight-box form li span textarea, .footerInner .zs-highlight-box form li span select {
+    background: #724608;
+    border: 1px solid #8A5915;
+    color: #FFC36F;
+}
+.footerInner .zs-highlight-box h3.newsletter-heading {
+    color:#FFD271;
+}
+.footerInner .zs-highlight-box .newsletter-desc {
+    color:#C27B17;
+}
+.footerInner .zs-highlight-box .newsletter-input-field {
+    background: #724608;
+    border: 1px solid #8A5915;
+    color: #FFC36F;
+}
+.footerInner .zs-highlight-box .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#FFC36F;
+}
+.footerInner .zs-highlight-box .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#FFC36F;
+}
+.footerInner .zs-highlight-box .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#FFC36F;
+}
+/*-----------------------------------    TEXT HIGHLIGHT CSS    -----------------------------------------------*/
+.footerInner .zs-text-light-color {
+color:#805521
+}
+.footerInner .zs-text-highlight-color {
+color:#FFD271
+}
+.footerInner .zs-highlight-box .zs-text-light-color {
+color:#805521
+}
+.footerInner .zs-highlight-box .zs-text-highlight-color {
+color:#ffd271
+}
+/*--------------------- THEME FOOTER TABS ACCORDION AREA CSS ---------------------*/
+
+.footerInner .zs-tabs ul, .footerInner .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #4F2700;
+    border-left: 1px solid #4F2700;
+}
+.footerInner .zs-tabs ul li, .footerInner .zs-highlight-box .zs-tabs ul li {
+    margin: 0px;
+    float: left;
+    padding: 0px;
+}
+.footerInner .zs-tabs ul li div, .footerInner .zs-highlight-box .zs-tabs ul li div {
+    background: #996121;
+    padding: 0 25px;
+    color: #E29523;
+    position: relative;
+    margin: 0 0 -1px;
+    line-height: 3;
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #4F2700;
+    border-top: 1px solid #4F2700;
+    border-bottom: 1px solid #4F2700;
+}
+.footerInner .zs-tabs ul li.selected div, .footerInner .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #7E3E00;
+    color: #ffffff;
+    border-bottom: 1px solid #7E3E00;
+}
+.footerInner .zs-tabs-accordion-content, .footerInner .zs-highlight-box .zs-tabs-accordion-content {
+    clear: both;
+    border: 1px solid #4F2700;
+    padding: 15px;
+    display: none;
+    color: #C27B17;
+    border-top: 0px;
+    background: #7E3E00;
+    margin-bottom: 3px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.footerInner .zs-accordion, .footerInner .zs-highlight-box .zs-accordion {
+    background: #996121;
+    color: #E29523;
+    padding: 12px 10px;
+    cursor: pointer;
+    border: 1px solid #4F2700;
+    margin-bottom: 2px;
+    display: none;
+}
+.footerInner .zs-accordion.selected, .footerInner .zs-highlight-box .zs-accordion.selected {
+    background: #f9f8f6;
+    color: #FFFFFF;
+    border: 0px;
+    margin-bottom: 0;
+}
+/*---------------------------------- THEME FOOTER AREA HIGHLIGHT BOX TABS ACCORDION AREA CSS START ------------------------------------*/
+.footerInner .zs-highlight-box .zs-tabs ul {
+    border-bottom: 1px solid #d77e31;
+    border-left: 1px solid #d77e31;
+}
+.footerInner .zs-highlight-box .zs-tabs ul li div {
+    background: #8d4a0d;
+    border-right: 1px solid #d77e31;
+    border-top: 1px solid #d77e31;
+    border-bottom: 1px solid #d77e31;
+}
+.footerInner .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #aa5508;
+    border-bottom: 1px solid #aa5508;
+}
+.footerInner .zs-highlight-box .zs-tabs-accordion-content {
+    background: #aa5508;
+    color: #EFBE75;
+    border-color: #d77e31;
+}
+.footerInner .zs-highlight-box .zs-tabs-accordion-content h1, .footerInner .zs-highlight-box .zs-tabs-accordion-content h2, .footerInner .zs-highlight-box .zs-tabs-accordion-content h3, .footerInner .zs-highlight-box .zs-tabs-accordion-content h4, .footerInner .zs-highlight-box .zs-tabs-accordion-content h5, .footerInner .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #FFFFFF;
+    text-shadow: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -o-text-shadow: none;
+}
+.footerInner .zs-highlight-box .zs-tabs-accordion-content a, .footerInner .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #FFFFFF;
+}
+.footerInner .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #e7e7e7;
+}
+.footerInner .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #9D4A03;
+    border-color: #B76824;
+    color: #e9b482;
+}
+.footerInner .zs-highlight-box .zs-tabs-accordion-content td {
+    background: transparent;
+    border-color: #B76824;
+    color: #EFBE75;
+}
+.footerInner .zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .footerInner .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .footerInner .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    background: #ffffff;
+    border: 1px solid #f8e5bf;
+    color: #747474;
+}
+/*--------------------------------------------------------------- FORM AREA CSS -------------------------------------------------------------------*/
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+form li {
+    overflow: hidden;
+    padding: 5px 0;
+    margin: 0;
+}
+form ul li label, form ul li div {
+    width: auto;
+    float: left;
+    padding: 5px 0 0
+}
+form ul li label {
+    width: 125px;
+    text-align: right;
+    padding-right: 35px
+}
+form li span input, form li span label {
+    float: none;
+    width: auto;
+    padding: 0px 5px;
+    margin: 3px;
+}
+form li div span {
+    display: block;
+}
+form li span input[type=text], form li span textarea, form li span select {
+    width: 210px;
+    background: #fff;
+    border: 1px solid #F8E5BF;
+    float: left;
+    margin: 0px;
+    resize: none;
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ color:#747474;
+    padding: 5px;
+    margin: 0;
+}
+form li span select {
+    width: 222px;
+}
+form li span textarea {
+    height: 80px;
+    overflow: auto;
+}
+form .dateinvoker {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/datePickerIcn.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: 5px;
+    outline: none;
+    margin-left: 5px;
+    padding: 0px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+form li input[type=submit], form li input[type=reset], button {
+    background: #b86900;
+    padding: 5px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #AB5500;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+ font-family:Georgia, "B Yekan", Times, serif;
+    font-size: 12px;
+}
+form li input[type=reset] {
+    background: #ffedca;
+    color: #482400;
+    border: 1px solid #FFD2A6;
+}
+/*--------------------------------------------------------------- THEME SEARCH BOX AREA CSS -------------------------------------------------------------------*/
+.searchContainer {
+    margin: 10px 15px 0 0;
+    float: right;
+}
+.searchbox {
+    width: 190px;
+    height: 27px;
+    background: #a45900;
+    background: -webkit-gradient(linear, left top, left bottom, from(#884300), to(#be6d00));
+    background: -moz-linear-gradient(top, #884300, #be6d00);
+    background: -o-linear-gradient(top, #884300, #be6d00);
+    background: -o-linear-gradient(top, #884300, #be6d00);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    box-shadow: 0 -1px 0 rgba(255, 254, 0, 0.14), 0 1px 0 rgba(255, 254, 0, 0.08);
+    -webkit-box-shadow: 0 -1px 0 rgba(255, 254, 0, 0.14), 0 1px 0 rgba(255, 254, 0, 0.08);
+    -moz-box-shadow: 0 -1px 0 rgba(255, 254, 0, 0.14), 0 1px 0 rgba(255, 254, 0, 0.08);
+    -o-box-shadow: 0 -1px 0 rgba(255, 254, 0, 0.14), 0 1px 0 rgba(255, 254, 0, 0.08);
+}
+.searchbox input[type=text] {
+    width: 140px;
+    height: 27px;
+    background: transparent;
+    line-height: 27px;
+    border: 0 solid;
+    outline: none;
+    padding: 0 10px;
+    font-family: Georgia, "B Yekan", Times, serif;
+    font-size: 12px;
+    color: #ffa056;
+}
+.searchbox input[type=submit] {
+    width: 35px;
+    height: 27px;
+    background: url("../../sub-bisculens/بیسکولنز Bisculens_files/images/searchicon.png") no-repeat 7px center transparent;
+    border: 0 none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* -------------------------------------------------------------  SLIDESHOW AREA CSS ---------------------------------------------------------------------------*/
+.zs-slideshow-left-arrow {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/zs-slideshow-left-arrow.png) left top no-repeat;
+    cursor: pointer;
+    height: 45px;
+    left: 0px;
+    margin-top: -23px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: opacity 500ms ease 0s;
+    -webkit-transition: opacity 500ms ease 0s;
+    -moz-transition: opacity 500ms ease 0s;
+    -o-transition: opacity 500ms ease 0s;
+    width: 22px;
+    z-index: 150;
+}
+.zs-slideshow-right-arrow {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/zs-slideshow-right-arrow.png) left top no-repeat;
+    cursor: pointer;
+    height: 45px;
+    right: 0px;
+    margin-top: -23px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: opacity 500ms ease 0s;
+    -webkit-transition: opacity 500ms ease 0s;
+    -moz-transition: opacity 500ms ease 0s;
+    -o-transition: opacity 500ms ease 0s;
+    width: 22px;
+    z-index: 150;
+}
+.themeSlideshowOuterContainer {
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: opacity 500ms ease 0s;
+    width: 100%;
+    z-index: 150;
+}
+.themeSlideshowInnerContainer {
+    background: #ffffff;
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+    -o-border-radius: 5px 0 0 0;
+    padding: 5px 10px 2px;
+    float: right;
+}
+.zs-slideshow-control-active {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/zs-slideshow-control-active.png) no-repeat left top;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 3px;
+    width: 10px;
+    padding: 0;
+}
+.zs-slideshow-control {
+    background: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/zs-slideshow-control.png) no-repeat left top;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 3px;
+    width: 10px;
+    padding: 0;
+}
+/*-----------------------------------      THEME HIGHLIGHT BOX AREA CSS    -----------------------------------------------*/
+.zs-highlight-box {
+ background-color: #803d00;
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png) , -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png) , -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: url(../../sub-bisculens/%D8%A8%DB%8C%D8%B3%DA%A9%D9%88%D9%84%D9%86%D8%B2%20Bisculens_files/images/highlightboxbg.png) , -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: repeat;
+ box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #a75c06 inset;
+ border-width: 1px;
+ border-style:solid;
+ border-color:#4e140f;
+ border-radius: 5px;
+ -moz-border-radius:5px;
+ -webkit-border-radius:5px;
+ -o-border-radius:5px;
+ padding: 10px;
+ margin: 0;
+    min-height: 200px;
+font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ color:#C47834;
+}
+.zs-highlight-box h1, .zs-highlight-box h2, .zs-highlight-box h3, .zs-highlight-box h4, .zs-highlight-box h5, .zs-highlight-box h6 {
+    border: 0px;
+    padding: 0px;
+    text-shadow: 1px 1px 0 #4B2A0A;
+    -webkit-text-shadow: 1px 1px 0 #4B2A0A;
+    -moz-text-shadow: 1px 1px 0 #4B2A0A;
+    -o-text-shadow: 1px 1px 0 #4B2A0A;
+}
+.zs-highlight-box h1 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:30px;
+color:#ffd271;
+}
+.zs-highlight-box h2 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:28px;
+color:#ffd271;
+}
+.zs-highlight-box h3 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:26px;
+color:#ffd271;
+}
+.zs-highlight-box h4 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:24px;
+color:#ffd271;
+}
+.zs-highlight-box h5 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:22px;
+color:#ffd271;
+}
+.zs-highlight-box h6 {
+font-family:Georgia, "B Yekan", Times, serif;
+font-size:20px;
+color:#ffd271;
+}
+.zs-highlight-box a {
+ text-decoration:none;
+color:#ffd271;
+}
+.zs-highlight-box a:hover {
+text-decoration:none;
+color:#ffd271;
+}
+.zs-highlight-box hr {
+    border-top: 1px solid #693400;
+}
+.zs-highlight-box th {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:#AA5508;
+ border-width:1px;
+ border-style:solid;
+ border-color:#AF5E14;
+ color:#E9B482;
+ padding:6px;
+}
+.zs-highlight-box td {
+ font-family:Georgia, "B Yekan", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#AF5E14;
+ color:#C47834;
+ padding:6px;
+}
+.zs-highlight-box form li span input[type=text], .zs-highlight-box form li span textarea, .zs-highlight-box form li span select {
+    background: #803d00;
+    border-color: #964A05;
+    color: #C47834;
+}
+.zs-highlight-box form li input[type=submit], .zs-highlight-box button {
+    background-color: #EB9625;
+    border-color: #F8A22F;
+}
+.zs-highlight-box form .dateinvoker {
+    background-color: transparent;
+}
+.zs-highlight-box h3.newsletter-heading {
+    color:#FFD271;
+}
+.zs-highlight-box .newsletter-desc {
+    color:#C47834;
+}
+.zs-highlight-box .newsletter-input-field {
+    background: #803d00;
+    border-color: #964A05;
+    color: #C47834;
+}
+.zs-highlight-box .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#C47834;
+}
+.zs-highlight-box .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#C47834;
+}
+.zs-highlight-box .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#C47834;
+}
+/*-----------------------------------    TEXT HIGHLIGHT CSS    -----------------------------------------------*/
+.zs-text-light-color {
+color:#BEBEBE
+}
+.zs-text-highlight-color {
+color:#8C4601
+}
+.zs-highlight-box .zs-text-light-color {
+color:#BEBEBE
+}
+.zs-highlight-box .zs-text-highlight-color {
+color:#ffd271
+}
+/*-------------------- THEME TABS AND ACCORDION AREA CSS START --------------------- */
+.zs-tabs ul, .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #E7D5B2;
+    border-left: 1px solid #E7D5B2;
+}
+.zs-tabs ul li, .zs-highlight-box .zs-tabs ul li {
+    margin: 0px;
+    float: left;
+    padding: 0px;
+}
+.zs-tabs ul li div, .zs-highlight-box .zs-tabs ul li div {
+    background: #F2EDE2;
+    padding: 0 25px;
+    color: #918a7b;
+    position: relative;
+    margin: 0 0 -1px;
+    line-height: 3;
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #E7D5B2;
+    border-top: 1px solid #E7D5B2;
+    border-bottom: 1px solid #E7D5B2;
+}
+.zs-tabs ul li:hover div, .zs-highlight-box .zs-tabs ul li:hover div {
+    background: #8D4A0D;
+    color: #ffffff;
+}
+.zs-tabs ul li.selected div, .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #FFFBF4;
+    color: #8c4601;
+    border-bottom: 1px solid #FFFBF4;
+}
+.zs-tabs-accordion-content, .zs-highlight-box .zs-tabs-accordion-content {
+    clear: both;
+    border: 1px solid #E7D5B2;
+    padding: 15px;
+    display: none;
+    color: #747474;
+    border-top: 0px;
+    background: #FFFBF4;
+    margin-bottom: 3px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.zs-accordion, .zs-highlight-box .zs-accordion {
+    background: #F2EDE2;
+    color: #918a7b;
+    padding: 12px 10px;
+    cursor: pointer;
+    border: 1px solid #E7D5B2;
+    margin-bottom: 2px;
+    display: none;
+}
+.zs-accordion.selected, .zs-highlight-box .zs-accordion.selected {
+    background: #8D4A0D;
+    color: #FFFFFF;
+    border: 0px;
+    margin-bottom: 0;
+}
+/*---------------------------------- THEME HIGHLIGHT BOX TABS ACCORDION AREA CSS START ------------------------------------*/
+.zs-highlight-box .zs-tabs-accordion-content h1, .zs-highlight-box .zs-tabs-accordion-content h2, .zs-highlight-box .zs-tabs-accordion-content h3, .zs-highlight-box .zs-tabs-accordion-content h4, .zs-highlight-box .zs-tabs-accordion-content h5, .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #8c4601;
+    text-shadow: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -o-text-shadow: none;
+}
+.zs-highlight-box .zs-tabs-accordion-content a, .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #378d8d;
+}
+.zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #e7e7e7;
+}
+.zs-highlight-box .zs-tabs-accordion-content th {
+    background: #ffffff;
+    border-color: #f5e3bf;
+    color: #8c4601;
+}
+.zs-highlight-box .zs-tabs-accordion-content td {
+    background: transparent;
+    border-color: #f5e3bf;
+    color: #747474;
+}
+.zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    background: #ffffff;
+    border: 1px solid #f8e5bf;
+    color: #747474;
+}
+/***************************** START SOCIAL ICONS SPRITE *****************************/
+.socialiconContainer {
+    margin: 5px 10;
+    text-align: center;
+}
+
+.mysocialicon-email, .mysocialicon-facebook, .mysocialicon-flickr, .mysocialicon-googleplus, .mysocialicon-linkedin, .mysocialicon-pinterest, .mysocialicon-rss, .mysocialicon-twitter, .mysocialicon-youtube, .mysocialicon-medium, .mysocialicon-instagram {
+     width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 3px;
+	
+}
+
+.mysocialicon-email {
+ 
+  background: url('../images/icon/email.png') ;
+  background-size:contain;
+
+}
+.mysocialicon-facebook {
+    background: url('../images/icon/facebook.png') no-repeat top left;
+	background-size:contain;
+}
+
+.mysocialicon-linkedin {
+    background: url('../images/icon/linkedin.png') no-repeat top left;
+	background-size:contain;
+}
+.mysocialicon-pinterest {
+     background: url('../images/icon/pinterest.png') no-repeat top left;
+	 background-size:contain;
+}
+.mysocialicon-rss {
+    background: url('../images/icon/rss.png') no-repeat top left;
+	background-size:contain;
+}
+
+.mysocialicon-youtube {
+   background: url('../images/icon/video.png') no-repeat top left;
+   background-size:contain;
+}
+
+
+.mysocialicon-instagram {
+ background: url('../images/icon/instagram.png') no-repeat top left;
+ background-size:contain;
+}
+/*****************************   END: SOCIAL ICONS SPRITE *****************************/
+
+.newsletter-container {
+background: transparent;
+    padding: 10px
+}
+h3.newsletter-heading {
+    margin-bottom: 10px;
+font-family: Georgia, "B Yekan", Times, serif;
+font-size: 26px;
+color: #8C4601;
+border-bottom:0px;
+text-shadow:none;
+-webkit-text-shadow:none;
+-moz-text-shadow:none;
+-o-text-shadow:none;
+}
+.newsletter-desc {
+    margin-bottom: 25px;
+font-family: Georgia, "B Yekan", Times, serif;
+font-size: 12px;
+color: #747474;
+}
+.newsletter-input-field {
+background: #ffffff;
+border-width: 1px;
+border-color: #F8E5BF;
+color:#747474;
+font-family: Georgia, "B Yekan", Times, serif;
+font-size: 12px;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align:top;
+}
+button.newsletter-button {
+background: #B86900;
+border-width: 1px;
+border-color: #C07005;
+color:#ffffff;
+font-family: Georgia, "B Yekan", Times, serif;
+font-size: 12px;
+border-radius:0px;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+-o-border-radius:0px;
+    border-style: solid;
+    cursor: pointer;
+    padding: 9px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+.newsletter-layout-1 .newsletter-form, .newsletter-layout-2 .newsletter-form {
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter-layout-3 .newsletter-form {
+    width: 200px;
+    margin: 0 auto;
+    text-align: right;
+}
+.newsletter-layout-3 button {
+    text-align: right;
+}
+.newsletter-form input[type="text"]::-moz-placeholder {
+    color:#747474;
+  font-size:90%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#747474;
+  font-size:85%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#747474;
+  font-size:90%;
+  line-height:normal;
+}
+/*----------------------------------- MEMBERSHIP PORTAL AREA CSS  -----------------------------------------------*/
+.mp-container {
+    height: 35px;
+    background:#6a3606;
+}
+.member-signin {
+    float: right;
+}
+.member-signin > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.member-signin li {
+    display: inline-block;
+    line-height: 35px;
+    margin-left: 20px;
+    padding: 0;
+    position:relative;
+}
+.member-signin li a {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size:12px;
+    text-decoration:none;
+    color:#fecf65;
+    display:block;
+}
+.member-signin li a:hover {
+    text-decoration:none;
+    color:#fecf65;
+}
+.member-signin li:first-child {
+    margin-left: 0;
+}
+.member-signin li:last-child:before {
+    color:#fecf65;
+    content: "|";
+    position: absolute;
+    top: 0;
+    left:-13px;
+}? 

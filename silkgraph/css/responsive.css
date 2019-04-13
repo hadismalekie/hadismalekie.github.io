@@ -1,0 +1,489 @@
+@media only screen and (max-width : 1352px){
+	.toggle_app.in_header{
+		width: 180px;
+		height: auto;
+	}
+	.toggle_app.in_header ul{
+		display: block;
+	}
+	.toggle_app.in_header ul li{
+		width: 100% !important;
+	}
+}
+@media only screen and (min-width : 1202px){
+	body .container{ width: 1200px;}
+}
+@media only screen and (max-width : 1202px){
+	body #profile_header_body{ margin: 0; width: 100%;}
+	body .module_post15 .slider_one .owl-carousel{margin: 0 100px;}
+	body .module_post15 .slider_one .owl-buttons div{width: 100px;}
+    
+    body #main_wrapper{ background-size: 100%;}
+    .video_box18 .pic{
+        margin-left: 8px;
+    }
+}
+@media only screen and (max-width : 1024px){
+    .vjs-no-js{ font-size: 20px;}
+    .sb_user_info .thumbnail{
+        width: 50px;
+        height: 50px;
+    }
+    .sb_user_info .title{
+        font-size: 16px;
+    }
+    .sb_user_info{
+        top:8px;
+    }
+    .firstpost .play_btn_pic{
+	    background: url(../../sub-silkgraph/img/play_icon_mid.png) no-repeat 0 0;
+        width: 62px;
+        height: 62px;
+    }
+    .firstpost .play_btn_pic:hover{
+	    background: url(../../sub-silkgraph/img/play_icon_mid.png) no-repeat 0 -62px;
+    }
+    #sidebar{
+        width: 29%;
+    }
+    #main_content{
+        width: 71%;
+    }
+    #main_wrapper {
+        background: url("../../sub-silkgraph/img/sidebar_bg2.png") repeat-y scroll right 0 rgba(0, 0, 0, 0);
+    }
+	body #logo{ width: 200px; }
+    body #logo a{ margin-right: 0;}
+    body .login_menu{ margin-left: 0;}
+}
+@media only screen and (max-width : 960px){
+	body .container{
+        width: auto;
+        margin: 0 12px;
+    }
+    body #header .container{
+        margin: 0 13px;
+    }
+	body .module_post15 .slider_one .owl-carousel{
+        margin: 0 70px;
+    }
+	body .module_post15 .slider_one .owl-buttons div{
+        width: 70px;
+    }
+	body #video_sidebar ,body .videobox{
+		float: none;
+		width: auto;
+	}
+ 	body #video_sidebar .wrapper{
+ 		float: right;
+ 		width: 32%;
+ 	}
+ 	body #video_sidebar .wrapper:last-child{
+ 		float: left;
+ 	}
+ 	body #video_sidebar .wrapper:first-child{
+ 		margin-left: 1.9%;
+ 	}
+    body #logo a{
+        background:url(../../sub-silkgraph/img/logo.png) no-repeat 0 -70px  ;
+        width: 146px;
+        height: 60px;
+        margin-top: 6px;
+    }
+    body .search_bg{
+        width: 360px;
+    }
+    body .search .txtbox{
+        width: 300px;
+    }
+    .chanel_info_list ul li{
+        font-size: 14px;
+    }
+    body .vjs-no-js{
+        font-size: 20px;
+    }
+    
+    .video_box7 .post_title{
+        font-size: 18px;
+    }
+    .video_box8 .post_title{
+        font-size: 15px;
+    }
+	
+}
+@media only screen and (min-width : 800px) and (max-width : 960px){
+    body #sidebar_inn {
+        padding: 0 10px;
+    }
+ 	body #video_sidebar .wrapper{
+ 		min-height: 150px;
+ 	}
+    body .sb_category ul li img{
+        margin-left:4px;
+        width: 20px;
+    }
+ }
+@media only screen and (max-width : 850px){
+    #footer .fbox_right{
+        width: 400px;
+    }
+    .chanel_info_list ul li{
+        font-size: 13px;
+    }
+	body #logo{ width: 175px;}
+}
+@media only screen and (max-width : 800px){
+	body .module_post15 .slider_one .owl-carousel{margin: 0 60px;}
+	body .module_post15 .slider_one .owl-buttons div{width: 60px;}
+    body #header .container{
+        padding: 3px 0;
+    }
+	body #sidebar_btn{ display: block;}
+    #main_content{ width: auto; float: none;}
+    body #logo{
+        width:113px;
+        height:46px;
+		margin-left: 50px;
+        padding-top: 7px;
+    }
+    body #logo a{
+        background:url(../../sub-silkgraph/img/logo.png) no-repeat 0 -140px;
+        width:113px;
+        height:46px;
+    }
+    .login_menu{
+        display: none;
+    }
+    .login_menu_mobile{
+        display: block;
+    }
+    body .sb_menu ul li.mobi{display: block; }
+    body #main_wrapper{ background: #fff;}
+    body #sidebar{
+        background: #F7F8FA;
+        width: 260px;
+        position: fixed;
+        overflow: auto;
+        right: -260px;
+        height: 100%;
+        top:0;
+        z-index: 49;
+        -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+             -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+    }
+    body #sidebar_body{ padding-top: 70px;}
+    .active_sidebar #full_bg{
+        display: block;
+    }
+    body .active_sidebar #sidebar{
+        right: 0px;
+    }
+    #sidebar_inn{ padding: 0 7px;}
+    #header .user_box{ display: none;}
+    body.mobile_user #sidebar_body{
+        padding-top: 155px;
+    }
+    .mobile_user #downloadApp .text{
+        font-size: 15px;
+        padding-right: 37px;
+    }
+	#header .toggle_app{width: 180px; height: 130px; left: -80px;}
+	#header .toggle_app_box .bullet{ left: 89px; right: auto;}
+	#header .toggle_app ul li{ float: none; width: auto;}
+}
+@media only screen and (max-width : 768px){	
+	body #header .upload,
+    body #header_btm,
+    body .wsidebar{ display: none;}
+	body .content{ width: auto; float: none;}
+ 	body #video_sidebar .wrapper{
+ 		float: none !important;
+ 		width: auto  !important;
+ 		min-height: auto ;
+ 		height: auto;
+ 	}
+ 	body #video_sidebar .wrapper:first-child{
+ 		margin-left: 0; 
+ 	}
+	body .active_sidebar{
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+    #footer .fbox_left,
+    #footer .fbox_right{
+        float: none;
+        width: auto;
+        margin-bottom: 15px;
+    }
+    #footer .fbox_left{ padding-top: 20px;}
+    #app_download{ margin: 0 auto; float: none;}
+    .copyright p, .copyright{ text-align: center;}
+    .footer_logo{
+        margin: 0 auto 12px auto;
+        float: none;
+    }
+	body #logo{ margin-left: 30px;}
+	#footer .toggle_app{left: -151px;}
+	#footer .toggle_app_box .bullet{ left: 158px;}
+	
+	.toggle_app.in_header{
+		width: 180px;
+		height: auto;
+	}
+	.toggle_app.in_header ul{
+		display: block;
+	}
+	.toggle_app.in_header ul li{
+		width: 100% !important;
+	}
+}
+@media only screen and (max-width:700px){
+	body #logo{ margin-left: 12px;}
+}
+@media only screen and (max-width:680px){
+	body .post_box1 .post{ float: none; margin-left: 0;  width: auto;}
+	body #main_slider .text{display: none;}
+	body #main_slider .title{ bottom: 10px;}
+	body #main_slider .owl-buttons div{ display: none;}
+	body .post_box1 #slider3 .post .pic{width: 120px;}
+	body .post_box2 .post{ margin: 0 4px;}
+    
+    body #main_body{
+        width: auto;
+        margin: 0 8px;
+        border-right: none;
+        border-left: none;
+    }
+    body .ts_tabs .ts_tabs_nav li a {
+        font-size: 17px;
+        line-height: 20px;
+    }
+	.mobile_user #downloadApp .text {
+    	font-size: 13px;
+	}
+	body .search_bg{
+		width: 280px;
+	}
+	body .search .txtbox{
+		width: 220px;
+	}
+}
+@media only screen and   (max-width :639px) {
+    .module_post4 .post{ width: 50%;}
+    .module_post4 .firstpost{ float: none; width: 100%;}
+    .video_box13 .post_inn{ padding: 7px;}
+    .module_post14 .post{
+        float: none;
+        width: 100%;
+        margin: 0 0 12px 0;
+    }
+    .module_post14{
+        padding: 12px 12px 0 12px;
+    }
+	.search{ padding-right: 10px;}
+}
+@media only screen and   (max-width :600px) {
+	body .post_box .owl-demo1 .post p{ display: none;}
+	body .post_box .post .title a{ font-size: 14px;}
+	body #main_slider .item img{ min-height: 200px;}
+	body .module_post15 .slider_one .owl-carousel{margin: 0 30px;}
+	body .module_post15 .slider_one .owl-buttons div{width: 30px;}
+	body #respond .sub{
+		width: 70px;
+	}
+	body #respond .comm_info{
+		padding-left: 80px;
+	}
+	body #profile_header .tumbnail_box{ margin-top: 40px;}
+	body #profile_header .tumbnail{ width: 80px; height: 80px;}
+    body .tumbnail .edit_avatar{ width: 80px; height: 80px;}
+    body .tumbnail .edit_avatar img{ margin: 30px auto;}
+	body #profile_header .name{ line-height: 35px; font-size: 17px;}
+	body #profile_header .description{ line-height: 35px; font-size: 19px;}
+    
+    
+    body #footer .fbox_left,
+    body #footer .fbox_right{
+        float: none;
+        width: auto;
+    }
+    body .module_slidepic .half_box{
+        float: none;
+        width: 100%;
+    }
+    body .search_bg{ width: 270px;}
+    body .search .txtbox{ width: 220px;}
+    body #video_info_left,
+    body #video_info_right{ float: none; width: auto;}
+    body .videoinfo_menu{
+        clear: none;
+    }
+    body #videoinfo .views{ float: right;}
+    body #videoinfo .views{ margin-bottom: 0px; padding-top:0px;}
+    body #video_info_right{ margin-bottom: 14px;}
+    
+    body .vjs-no-js{
+        font-size: 17px;
+    }
+    body #profile_header_body .following,
+    body #profile_header_body .upload{
+        left: 15px;
+    }
+	.mobile_user #downloadApp .text1{ display: none;}
+	.mobile_user #downloadApp .text2{ display: block;}
+	
+	
+    body #header .search_bg{
+        display: none;
+        position: fixed;
+        width: 100%;
+        right: 0;
+        top: 0;
+        padding: 0;
+        height: 70px;
+        z-index: 9;
+        margin: 0;
+    }
+    body.mobile_user #header .search_bg{
+		top: 66px;
+	}
+    body #header .search{ height: 50px; line-height: 50px; padding: 10px 15px 10px 0; border: none; background-color: #fff;}
+    body #header .search .txtbox{ line-height: 48px; height: 48px;}
+    body .search_button{ display: block; cursor: pointer;}
+    body .search .submit{ margin-left: 15px;}
+    body .search i{ margin: 5px 0 0 15px;}
+    .search i.close{
+        display: block;
+    }
+    .search .submit,
+    .search i.search_icon{
+        display: none;
+    }
+}
+@media only screen and   (max-width :530px) {
+	body #profile_header .name,
+    body #profile_header .description{ line-height: 30px;}
+    body .module_post13 .post{
+        float: none;
+        width: auto;
+    }
+    body #videoinfo{ padding: 0 12px 14px;}
+    body #videocomment .post_body{ padding: 0 12px;}
+    body .video_text{ padding-right:12px; padding-left: 12px; }
+    body #footer{ padding-right: 12px; padding-left: 12px;}
+    .module_post3 .post {
+        margin: 0 0.75%;
+        width: 31.83%;
+    }
+    .mobile_user #downloadApp .downloadbtn a{
+        padding: 0 15px;
+    }
+	body #payment_dialog{
+		width:97% !important;
+	}
+	body .no_purchased .text i::before{ font-size: 60px; display: block;}
+	body .no_purchased .text{font-size: 15px; height: 150px !important;}
+}
+@media only screen and   (max-width :480px) {
+	body .slider_one .post p{  font-size: 0;}
+	body .module_post15 .slider_one .owl-carousel{margin: 0 15px;}
+	body .module_post15 .slider_one .owl-buttons div{width: 15px;}
+	body .module_post15 .post_box15 .slider_one .post  .pic{	width: 110px;}
+	body #respond .sub{
+		width: 70px;
+		position: inherit;
+		float: left;
+		top: 0;
+	}
+	body #respond .comm_info{
+		padding-left:0px;
+		margin-bottom: 5px;
+	}
+    body #main_body{ margin:0;}
+    .post_title{ font-size: 15px;}
+    .post p{ font-size: 12px;}
+    body .vjs-no-js{
+        font-size: 15px;
+    }
+    
+    #header{height: 60px;}
+    body #logo{padding: 0;}
+    #sidebar_btn{ margin-top: 15px;}
+    .login_menu_mobile{ padding-top: 15px;}
+    body #header .search_bg{ height: 60px;}
+    body #header .search{ padding-bottom: 5px; padding-top: 5px;}
+    body{ padding-top: 70px;}
+    .video_box7 .post_title{ bottom: 30px;}
+	
+	#footer .toggle_app{width: 180px; height: 130px; left: -22px;}
+	#footer .toggle_app_box .bullet{ left: 31px;}
+	#footer .toggle_app ul li{ float: none; width: auto;}
+	
+	#header .toggle_app_box{ margin-top: 7px; }
+}
+@media only screen and (max-width : 440px) {
+    .module_post3 .post{
+        width: 46%;
+        margin: 0 2%;
+    }
+    body .vjs-no-js{
+        font-size: 14px;
+    }
+    .mobile_user #downloadApp .mobicon{
+        right: 4px;
+    }
+    .mobile_user #downloadApp .text{
+        font-size: 14px;
+        padding-right: 30px;
+    }
+	.mobile_user #downloadApp .text2{ display: none;}
+    .mobile_user #downloadApp .mobicon{ display: none;}
+}
+@media only screen and   (max-width : 400px) {
+    body #profile_header .tumbnail_box{
+        margin-top: 20px;
+    }
+    .mobile_user #downloadApp .text{
+        padding-left: 135px;
+    }
+    .mobile_user #downloadApp .downloadbtn .btn a{
+        padding: 0 10px;
+    }
+}
+@media only screen and   (max-width : 380px) {
+    #app_download{ width: auto; float: none;}
+    .mobile_user #downloadApp .text{
+        line-height: 20px ;
+    }
+    body .vjs-no-js{
+        font-size: 13px;
+    }
+	body #profile_header .tumbnail{ width: 60px; height: 60px;}
+    body .tumbnail .edit_avatar{ width: 60px; height: 60px;}
+    body .tumbnail .edit_avatar img{ margin: 20px auto;}
+}
+@media only screen and   (max-width : 380px) {
+    .module_post3 .post{
+        width: 47%;
+        margin: 0 1.5%;
+    }
+    body .vjs-no-js{
+        font-size: 12px;
+    }
+    body .container_reg_log .input{
+        width: auto;
+    }
+    .mobile_user #downloadApp .text{
+        font-size: 12px;
+        line-height: 17px;
+        padding-left: 120px;
+    }
+    .mobile_user #downloadApp .downloadbtn a{
+        font-size: 15px;
+        padding: 0 8px;
+    }
+}

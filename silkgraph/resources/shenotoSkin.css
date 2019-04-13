@@ -1,0 +1,312 @@
+#myElement:focus
+{
+    outline : 0;
+}
+
+.jw-icon
+{
+    outline                       : 0;
+    font-family                   : 'yekan';
+    -webkit-font-smoothing        : antialiased;
+    font-style                    : normal;
+    font-weight                   : normal;
+    text-transform                : none;
+    background-color              : transparent;
+    font-variant                  : normal;
+    -webkit-font-feature-settings : "liga";
+    -moz-font-feature-settings    : "liga=1";
+    -moz-font-feature-settings    : "liga";
+    -ms-font-feature-settings     : "liga" 1;
+    -o-font-feature-settings      : "liga";
+    font-feature-settings         : "liga";
+    -moz-osx-font-smoothing       : grayscale
+}
+
+.jw-skin-shenotoSkin .jw-background-color
+{
+    background : linear-gradient(to bottom, #323b4c, #2f3847 50%, #323b4c 100%)
+}
+
+.jw-skin-shenotoSkin .jw-controlbar
+{
+    background : rgba(45, 45, 45, 0.6)
+}
+
+.jw-skin-shenotoSkin .jw-text
+{
+    font-family : "yekan";
+    color       : #fff
+}
+
+.jw-skin-shenotoSkin .jw-tooltip-title
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-knob
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-button-color
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-button-color:hover
+{
+    color : #EF3E36
+}
+
+.jw-skin-shenotoSkin .jw-toggle
+{
+    color : #139ed5
+}
+
+.jw-skin-shenotoSkin .jw-toggle.jw-off
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-option
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-option.jw-active-option
+{
+    color : #139ed5
+}
+
+.jw-skin-shenotoSkin .jw-icon-display
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-display-icon-container
+{
+    border-radius : .5em
+}
+
+.jw-skin-shenotoSkin .jw-display-icon-container:hover
+{
+    background : #139ed5
+}
+
+.jw-skin-shenotoSkin .jw-display-icon-container:hover .jw-icon-display
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-rail
+{
+    background : linear-gradient(to bottom, #EF3E36, #e13a33 50%, #EF3E36 100%);
+}
+
+.jw-skin-shenotoSkin .jw-buffer
+{
+    background : linear-gradient(to bottom, #a92727, #7e1d1d 50%, #a92727 100%)
+}
+
+.jw-skin-shenotoSkin .jw-progress
+{
+    background : linear-gradient(to bottom, #EF3E36, #e13a33 50%, #EF3E36 100%)
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal
+{
+    background : rgba(24, 35, 53, 0.8)
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal .jw-knob
+{
+    margin-left : -0.325em
+}
+
+.jw-skin-shenotoSkin .jw-slider-vertical .jw-knob
+{
+    margin-bottom : -0.325em
+}
+
+.jw-skin-shenotoSkin .jw-time-tip, .jw-skin-shenotoSkin .jw-volume-tip, .jw-skin-shenotoSkin .jw-menu
+{
+    background : rgba(80, 88, 99, 0.9);
+    border     : 0;
+    padding    : .5em
+}
+
+.jw-skin-shenotoSkin .jw-skip
+{
+    background : rgba(24, 35, 53, 0.8);
+    padding    : .5em
+}
+
+.jw-skin-shenotoSkin .jw-skip .jw-skip-icon
+{
+    color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-skip.jw-skippable:hover .jw-skip-icon, .jw-skin-shenotoSkin .jw-skip.jw-skippable:hover .jw-text
+{
+    color : #139ed5
+}
+
+.jw-skin-shenotoSkin .jw-time-tip .jw-text, .jw-skin-shenotoSkin .jw-dock-button .jw-text
+{
+    color : #bbb
+}
+
+.jw-skin-shenotoSkin .jw-time-tip
+{
+    bottom : 1em
+}
+
+.jw-skin-shenotoSkin .jw-dock-button
+{
+    background    : linear-gradient(to bottom, #323b4c, #2f3847 50%, #323b4c 100%);
+    border-radius : .5em
+}
+
+.jw-skin-shenotoSkin .jw-dock-button:hover
+{
+    background : #139ed5
+}
+
+.jw-skin-shenotoSkin .jw-playlist-container
+{
+    padding : 0
+}
+
+.jw-skin-shenotoSkin .jw-icon-inline, .jw-skin-shenotoSkin .jw-icon-tooltip, .jw-skin-shenotoSkin .jw-text-elapsed, .jw-skin-shenotoSkin .jw-text-duration
+{
+    padding : 0 .25em;
+}
+
+.jw-skin-shenotoSkin .jw-controlbar
+{
+    bottom    : 0.6em;
+    display   : inline-block;
+    left      : 0;
+    margin    : 0 auto;
+    max-width : 50em;
+    right     : 0;
+    width     : 100%;
+}
+
+.jw-skin-shenotoSkin.jw-flag-audio-player .jw-controlbar
+{
+    bottom : 0
+}
+
+.jw-skin-shenotoSkin .jw-controlbar
+{
+    border-radius : 0;
+}
+
+.jw-skin-shenotoSkin .jw-playlist-container
+{
+    left     : -42%;
+    overflow : hidden;
+    bottom   : .2em
+}
+
+.jw-skin-shenotoSkin .jw-playlist-container .jw-option
+{
+    border-bottom : 1px solid rgba(24, 35, 53, 0.8)
+}
+
+.jw-skin-shenotoSkin .jw-playlist-container .jw-option:hover, .jw-skin-shenotoSkin .jw-playlist-container .jw-option.jw-active-option
+{
+    background-color : rgba(24, 35, 53, 0.8);
+    color            : #139ed5
+}
+
+.jw-skin-shenotoSkin .jw-playlist-container ::-webkit-scrollbar-track
+{
+    background-color : #222c37
+}
+
+.jw-skin-shenotoSkin .jw-playlist-container ::-webkit-scrollbar
+{
+    width         : 2px;
+    border        : 10px solid rgba(24, 35, 53, 0.8);
+    border-radius : .3em
+}
+
+.jw-skin-shenotoSkin .jw-playlist-container ::-webkit-scrollbar-thumb
+{
+    background-color : #fff
+}
+
+.jw-skin-shenotoSkin .jw-tooltip-title
+{
+    border-bottom    : 1px solid rgba(24, 35, 53, 0.8);
+    background-color : rgba(24, 35, 53, 0.8)
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal .jw-rail, .jw-skin-shenotoSkin .jw-slider-vertical .jw-rail, .jw-skin-shenotoSkin .jw-slider-horizontal .jw-progress, .jw-skin-shenotoSkin .jw-slider-vertical .jw-progress, .jw-skin-shenotoSkin .jw-slider-horizontal .jw-buffer, .jw-skin-shenotoSkin .jw-slider-vertical .jw-buffer
+{
+    border-radius : .5em
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal .jw-knob, .jw-skin-shenotoSkin .jw-slider-vertical .jw-knob
+{
+    background-color : #fff;
+    width            : .7em;
+    height           : .7em;
+    border-radius    : 50%
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal
+{
+    background : transparent
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal .jw-rail, .jw-skin-shenotoSkin .jw-slider-horizontal .jw-progress, .jw-skin-shenotoSkin .jw-slider-horizontal .jw-buffer
+{
+    height : .3em
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal .jw-cue
+{
+    top              : .04999999999999999em;
+    background-color : #fff;
+    width            : .2em;
+    height           : .2em;
+    border-radius    : 1em
+}
+
+.jw-skin-shenotoSkin .jw-slider-horizontal .jw-knob
+{
+    top : -0.19999999999999998em
+}
+
+.jw-skin-shenotoSkin .jw-slider-vertical .jw-rail, .jw-skin-shenotoSkin .jw-slider-vertical .jw-progress
+{
+    width : .3em
+}
+
+.jw-skin-shenotoSkin .jw-slider-vertical .jw-rail
+{
+    background : linear-gradient(to right, #323b4c, #2f3847 50%, #323b4c 100%)
+}
+
+.jw-skin-shenotoSkin .jw-slider-vertical .jw-progress
+{
+    background : linear-gradient(to right, #EF3E36, #c13732 50%, #EF3E36 100%)
+}
+
+.jw-skin-shenotoSkin .jw-time-tip, .jw-skin-shenotoSkin .jw-volume-tip, .jw-skin-shenotoSkin .jw-menu, .jw-skin-shenotoSkin .jw-skip
+{
+    border-radius : .3em
+}
+
+.jw-skin-shenotoSkin .jw-volume-tip, .jw-skin-shenotoSkin .jw-menu
+{
+    bottom : .2em
+}
+
+.jw-tab-focus:focus
+{
+    outline : medium none;
+}

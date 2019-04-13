@@ -70,7 +70,7 @@ p {
 ul, ol {
     margin: 0;
     padding: 0 0 0 20px;
-    list-style-image: url(images/list-style-image.png);
+    list-style-image: url(../sub-lensopens/images/list-style-image.png);
 }
 li {
     margin: 0;
@@ -209,12 +209,12 @@ background-position:$NavigationBGPosition[left top];
 }
 #navigation li a span {
     float: left;
-    background: url(images/menustyle.png) left no-repeat;
+    background: url(../sub-lensopens/images/menustyle.png) left no-repeat;
     padding: 0 0 0 15px;
 }
 #navigation li:hover a span, #navigation li.selected a span, #navigation li.active a span {
     float: left;
-    background: url(images/menustyleHover.png) left no-repeat;
+    background: url(../sub-lensopens/images/menustyleHover.png) left no-repeat;
     padding: 0 0 0 15px;
 }
 #navigation li:hover, #navigation li.selected, #navigation li.active {
@@ -229,7 +229,7 @@ background-position:$NavigationBGSelectedPosition[left top];
  color:$NavigationAHoverColor[#79b400];
 }
 #navigation li.navArrow a em, #navigation li:hover.navArrow a em, #navigation li.active.navArrow a em, #navigation li.selected.navArrow a em {
-    background: url(images/navArrow.png) no-repeat scroll 0 0;
+    background: url(../sub-lensopens/images/navArrow.png) no-repeat scroll 0 0;
     display: block;
     height: 9px;
     width: 9px;
@@ -237,7 +237,7 @@ background-position:$NavigationBGSelectedPosition[left top];
     float: left
 }
 #navigation li:hover.navArrow a em, #navigation li.active.navArrow a em, #navigation li.selected.navArrow a em {
-    background: url(images/navArrow1.png) no-repeat scroll 0 0;
+    background: url(../sub-lensopens/images/navArrow1.png) no-repeat scroll 0 0;
 }
 .submenu {
  background-color:$SubmenuBGColor[#ffffff];
@@ -306,7 +306,7 @@ background-repeat:$SubmenuBGHoverRepeat[repeat];
     height: 10px;
 }
 .submenu li.navArrow a em, .submenu li:hover.navArrow a em {
-    background: transparent url(images/navArrow2.png) no-repeat scroll center left;
+    background: transparent url(../sub-lensopens/images/navArrow2.png) no-repeat scroll center left;
     float: left;
     height: 11px;
     width: 10px;
@@ -314,7 +314,7 @@ background-repeat:$SubmenuBGHoverRepeat[repeat];
     margin-top: 6px;
 }
 .submenu li:hover.navArrow a em {
-    background: transparent url(images/navArrow2.png) no-repeat scroll center left;
+    background: transparent url(../sub-lensopens/images/navArrow2.png) no-repeat scroll center left;
 }
 /*--------------------------------------------------- CONTENT AREA CSS -------------------------------------------------------------------------------------*/
 .contentContainer {
@@ -1004,7 +1004,7 @@ form li span button {
     fcursor: pointer;
 }
 form .dateinvoker {
-    background: url(images/datePickerIcn.png) 0 0 no-repeat;
+    background: url(../sub-lensopens/images/datePickerIcn.png) 0 0 no-repeat;
     width: 16px;
     height: 16px;
     border: none;
@@ -1056,7 +1056,7 @@ form li input[type=reset] {
     width: 160px;
 }
 .searchbox input[type=submit] {
-    background: url(images/searchicon.png) center center no-repeat;
+    background: url(../sub-lensopens/images/searchicon.png) center center no-repeat;
     width: 25px;
     height: 25px;
     position: absolute;
@@ -1255,7 +1255,7 @@ color:$BodyHighlightBoxTextHighlightColor[#333432];
     text-align: right;
 }
 .zs-socialicon-email, .zs-socialicon-facebook, .zs-socialicon-flickr, .zs-socialicon-googleplus, .zs-socialicon-linkedin, .zs-socialicon-pinterest, .zs-socialicon-rss, .zs-socialicon-twitter, .zs-socialicon-youtube, .zs-socialicon-medium, .zs-socialicon-instagram {
-    background: url('images/zs-socialicon-sprite.png') no-repeat top left;
+    background: url('../sub-lensopens/images/zs-socialicon-sprite.png') no-repeat top left;
     width: 16px;
     height: 16px;
     display: inline-block;
