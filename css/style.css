@@ -965,7 +965,7 @@ ul.portfolio-image li .desc{
   min-height: 660px;
   width: 100%;
   height: 100%;
-  float: left;
+  float:left ;
 }
 .wrap-about {
   height: 100%;
@@ -1250,8 +1250,9 @@ ul.portfolio-image li .desc{
 .footer-bottom{
   width: 100%;
   background: #510544;
-  padding: 80px 0;
+  padding: 60px 0;
   color: #636363;
+
   
 }
 .footer-bottom li {
@@ -1346,3 +1347,26 @@ ul.portfolio-image li .desc{
 .skillst .count-bar .count { background-color: #818181;}
 .skillst .count-bar .count span:after { border-top: 4px solid #818181;}
 
+/*----------------------------------------- 
+/*---------------- slideshow ----------------*/
+div.horizscrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.horizscrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.horizscrollmenu a:hover {
+  background-color: #777;
+}
+
+
+
+/*!------slide show ------------------------------*/
