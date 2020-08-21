@@ -66,10 +66,10 @@ function MM_swapImage() { //v3.0
       <div class="for-sticky">
         <!--LOGO-->
         <div class="col-md-2 col-xs-6 logo">
-          <a href="../index-en.html"><img alt="logo" class="logo-nav" src="../images/logo.png"></a>
+          <a href="../index.html"><img alt="logo" class="logo-nav" src="../images/logo.png"></a>
         </div>
         <!--/.LOGO END-->
-        <a href="../index.html"><img alt="En"  src="../images/eng.jpg"></a>
+        <a href="../indexx.html"><img alt="En"  src="../images/eng.jpg"></a>
            <a href="../index-fa.html"><img alt="En"  src="../images/pers.jpg"></a>
       </div>
      

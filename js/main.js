@@ -98,7 +98,7 @@
     });
 	
 	$(".typeden").typed({
-        strings: ["Storytelling Animation", "Creative Photography",  "Information Design"],
+        strings: ["I am your host, Hadis Malekie", "I communicate math and computer science through art",  "animated films, photography and illustration"],
         typeSpeed: 140,
         backDelay: 400,
         // loop
