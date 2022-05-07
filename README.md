@@ -1,2 +1,2 @@
 # hadismalekie.github.io
-Hadis Malekie's Personal Website 
+Hadis Maleki's Personal Website 
